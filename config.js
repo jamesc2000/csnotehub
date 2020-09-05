@@ -30,7 +30,7 @@ module.exports = {
   ],
   author: {
     name: 'csnotehub',
-    photo: '/photo.jpg',
+    photo: '/media/logo.svg',
     bio: '',
     contacts: {
       email: 'jlacruz2019@plm.edu.ph',

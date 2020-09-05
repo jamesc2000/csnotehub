@@ -2,11 +2,11 @@
 @import '../../../assets/scss/mixins';
 
 .author {
-  &__photo {
-    display: inline-block;
+  &__logo {
+    display: block;
     margin-bottom: 0;
-    border-radius: 50%;
-    background-clip: padding-box
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
