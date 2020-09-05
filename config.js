@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://www.csnotehub.com',
   pathPrefix: '/',
-  title: 'coffeecs',
+  title: 'csnotehub',
   subtitle: 'Tips for CS, IT, and CpE university students!',
-  copyright: '© James Laurence Cruz 2020',
+  copyright: '© 2020James Laurence Cruz',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: '',
@@ -20,16 +20,16 @@ module.exports = {
       path: '#'
     },
     {
-      label: 'About me',
+      label: 'About',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Terms',
+      path: '/pages/terms'
     }
   ],
   author: {
-    name: 'coffeecs',
+    name: 'csnotehub',
     photo: '/photo.jpg',
     bio: '',
     contacts: {
