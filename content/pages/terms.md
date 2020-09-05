@@ -4,28 +4,16 @@ template: "page"
 socialImage: "/media/logo.svg"
 ---
 
-Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+# Terms and Conditions
 
-Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+This website (csnotehub.com) serves the purpose of providing **supplementary** information in the form of summarized lessons or "notelets". Certain mistakes or inaccuracies may be found in this website. The author or the copyright holders hold no liabilities that may arise from these mistakes or inaccuracies. Content that is within this website is free to distribute and use non-commercially.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-4.jpg)
+## General
+1. This software and the content within it is provided "as is" without any warranty of any kind, express or implied. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the other use or other dealings in the software.
+2. This website and all the content within this website, unless otherwise noted, is the copyrighted property of James Laurence A. Cruz.
+3. By accessing this website and all of its pages, you are acknowledging to have read, understood, and agree to abide by these Terms and Conditions.
+4. Any information or links to external websites not part of csnotehub.com are not affiliated to this website.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
-
-## Header Level 2
-
-Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
-
-+ **Lorem ipsum** dolor sit amet, consectetuer adipiscing elit.
-+ Aliquam tincidunt mauris eu risus.
-+ Vestibulum auctor dapibus neque.
-
-### Header Level 3
-
-Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec **consectetuer** ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
-
-Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-
-#### Header Level 4
-
-Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+## You May
+1. You may redistribute content in this site in any form, digital or print, as long as you do it non-commercially.
+2. You may download and host the content from this website to another website.
