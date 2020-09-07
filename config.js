@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-  url: 'http://csnotehub.com',
-  pathPrefix: '/',
+  url: 'https://jamesc2000.github.io/csnotehub/',
+  pathPrefix: 'csnotehub/',
   title: 'csnotehub',
   subtitle: 'Tips for CS, IT, and CpE university students!',
   copyright: '© 2020 James Laurence Cruz',
