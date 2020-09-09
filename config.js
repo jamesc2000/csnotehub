@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© 2020 James Laurence Cruz',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'UA-177509114-1',
   useKatex: false,
   menu: [
     {
