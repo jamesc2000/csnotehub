@@ -1,1 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Sep 2020 12:27:06 GMT</lastBuildDate></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Sep 2020 13:29:28 GMT</lastBuildDate><item><title><![CDATA[Hello World!]]></title><description><![CDATA[First time learning programming? Start here! A C++ tutorial for beginners, learn how to write "Hello World" and how it works in C++]]></description><link>http://csnotehub.com/posts/cpp-hello-world</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-hello-world</guid><pubDate>Wed, 09 Sep 2020 22:24:34 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#setting-up&quot;&gt;Setting up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#explanation&quot;&gt;Explanation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;setting-up&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#setting-up&quot; aria-label=&quot;setting up permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;If this is your first time programming, you probably have not installed Visual Studio (or other IDEs and c++ compilers). If you have skip to the &lt;a href=&quot;#code&quot;&gt;Code part&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are running Windows then I would recommend using Visual Studio since it’s simple and straightforward to install.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&amp;#x26;rel=16&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Download Visual Studio Community 2019 for free.&lt;/a&gt; You will be redirected to the download page.&lt;/li&gt;
+&lt;li&gt;After clicking the link you will be presented with the screen below. Feel free to save the installer anywhere you want. &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4f7e44b86a147db2762787f8ddac87bd/21482/screenshot-cpp-hello-world-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.75000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACUElEQVQoz02S204TURSG+wZyW1RAq4V7vISAj8NbeMeVaPDCQ6ClpKWdzkynB1oCRgkmRgO0BdQgBGhtKxR6PkOhfO4ZTk7yzV57Tfa//rX2mPx+jTmXHUmSkGUZt9tNZHGJWCxGNBolHo8Tv451VldXDfTvkUgEn6qiCjTNh+bzYfL5VPyaRkAI+42kyuFRFv1pnrZpt9tcXhrb2/X8/JwLEa+srKDI3ttzOib9pSoyXsmDe87Fm8lJfm//oFIuc5Qrk87VyBbr5KotirUW9XqDVqtFtXmKY3aWD+/fGYZURbkTlL0SM3YbdtsU01NT/Elsc94+I18ocpBMGyIXnY7hrCwKnZ6d0WjUkTxubPYZXB4Zj+RFUxVd0GdYNloWhENBfh5kqDeFi3KJ5P4ehULB6LfTuRBxnmazSalU4uPSkpihcj0/9WqGwWCQQCBgoMey10v01w4nJzlKlQb7iQzH2SwNIdIQRfR8rdGkUq0xHw6jiFZvNIIC042QTigUEtU0dnd3SSSSLMYSzMdShGNptvb+kjnMkjk6JpcvkC9V+fR5WZwJsrCwYNx4MBi6cqjIGi6nC4djBqfTydbmJlnhSr/tY+GoWCpTqVRp1GvspE7YEOKJZIqxsTEGB58xPDzCyNAQ46/f3jn0ygqSVzH+Rb1iOp0WpEinUmxubLC2tkZ0fZ0vX7+x/D3GnCTTbTbTda8Ls7mb+yJ+Mf7yzqFj1sm07cqh/78x6IyOPqent4/+gX4slscMWJ/yxGLhwcMeevseYbVaRd7Cq4kJ/gFtAXshv9YEbwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/4f7e44b86a147db2762787f8ddac87bd/8ac56/screenshot-cpp-hello-world-1.webp 240w,
+/static/4f7e44b86a147db2762787f8ddac87bd/d3be9/screenshot-cpp-hello-world-1.webp 480w,
+/static/4f7e44b86a147db2762787f8ddac87bd/e46b2/screenshot-cpp-hello-world-1.webp 960w,
+/static/4f7e44b86a147db2762787f8ddac87bd/e5c51/screenshot-cpp-hello-world-1.webp 1350w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/4f7e44b86a147db2762787f8ddac87bd/8ff5a/screenshot-cpp-hello-world-1.png 240w,
+/static/4f7e44b86a147db2762787f8ddac87bd/e85cb/screenshot-cpp-hello-world-1.png 480w,
+/static/4f7e44b86a147db2762787f8ddac87bd/d9199/screenshot-cpp-hello-world-1.png 960w,
+/static/4f7e44b86a147db2762787f8ddac87bd/21482/screenshot-cpp-hello-world-1.png 1350w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/4f7e44b86a147db2762787f8ddac87bd/d9199/screenshot-cpp-hello-world-1.png&quot;
+          alt=&quot;&amp;quot;Visual Studio download page&amp;quot;&quot;
+          title=&quot;&amp;quot;Visual Studio download page&amp;quot;&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;When it finishes downloading, run the downloaded installer. A progress bar should appear, when it finishes press &lt;strong&gt;continue&lt;/strong&gt; when prompted.&lt;/li&gt;
+&lt;li&gt;Wait for the installer to fetch the files required. This could take around 2 minutes depending on your internet connection. &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 783px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0a86fd2756f7011d2894b72b5a515098/e51a6/screenshot-cpp-hello-world-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.58333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC/ElEQVQ4y2WTS3MMURiGT3fPJLYUwkJRLlmw8AP8ABS/wIKyUNm4lKJKYSEWYUIQ12QiiIzIjWQil8HOyqVCJGGUa5GKMZnume65d09fXu/MWEVXPfWdPnX6Od93ztdC9BYgekioAOl+Hv7uHPz3svDfyaKmg7GN3OBcawY1F3XUNqmoPRNH7ckYlhyfg+/gdygHPsG3bwa+PdMQYqAI0UfZwzylHN9mbM9B3CIUidYsxCXGi5wPcOMmE6KR605x7liaJOE/vADfgV/w7/1C4aAJaYCLeouoe5RD84yJC6R5uojm9xxPWWieLCLwpkAYX5sIvLIQeGmjhay5VoI440A5WYJ8kJuIxxZkInpNbI3kASsDR4/DTSeAXBKl1B/AyaH6eItwsa2HwqselnW6WH7Po3CIQiL6LWyeyKNYspHO5qCmdCSNNOIJDWpSh8E52wVsekqMllPdYseYhboeF/VhF5tGXQqHKRxmyYMURgrc2MO7jz/IV2iaioVEAqqmIZ1OI5vNVkgmk1BVrZLhrhELK+9S1udhw2A5wzCF4bLQpDBPn4v53zHE/sQrEsMw/kPXdWJQ6GB7fwFLr1lYF7Sxtt2m8AkP8wlL5jluflaA41VLYVUsz6u8V3A5dv9Fr3qC5WfnkIkVHQ42hDys7y6XPOFAHqc5bGPLc5Zs8gKsMvkqpUXYXFPMQI/Pw8tq2D2Wx6quEuofOtgYciiMuJAmaOaBro6YCEZ1YiD4gXE2heBMEsH3ZEpD8K2KjkkVbS/jCDz9jJsvfqK+jU1+QcOKKymsusK+FE8pKwvHaR8lQ3blgkQfz/UBG7mLvdWZYbMbbPQUG12DaFEJY9MCxNnfkE7PQTr6HVJDtFwyP+bVi1EKRoq8cfK4AHkgD6U3AyWUhtxlQOlMQWlXodxIQLkch3x+HkrjT8gnvkE+EoXSMA1l/ySF4xSNkVH+TiPMaJg84m/Wz8x6WMJ9HeIuCWqQrjOjSzFI55hR4w9Ip75AOhaFfGgWcsNURfgXF+cM36tnifwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0a86fd2756f7011d2894b72b5a515098/8ac56/screenshot-cpp-hello-world-2.webp 240w,
+/static/0a86fd2756f7011d2894b72b5a515098/d3be9/screenshot-cpp-hello-world-2.webp 480w,
+/static/0a86fd2756f7011d2894b72b5a515098/b408c/screenshot-cpp-hello-world-2.webp 783w&quot;
+          sizes=&quot;(max-width: 783px) 100vw, 783px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0a86fd2756f7011d2894b72b5a515098/8ff5a/screenshot-cpp-hello-world-2.png 240w,
+/static/0a86fd2756f7011d2894b72b5a515098/e85cb/screenshot-cpp-hello-world-2.png 480w,
+/static/0a86fd2756f7011d2894b72b5a515098/e51a6/screenshot-cpp-hello-world-2.png 783w&quot;
+          sizes=&quot;(max-width: 783px) 100vw, 783px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0a86fd2756f7011d2894b72b5a515098/e51a6/screenshot-cpp-hello-world-2.png&quot;
+          alt=&quot;&amp;quot;Installer getting ready&amp;quot;&quot;
+          title=&quot;&amp;quot;Installer getting ready&amp;quot;&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When the installer finishes fetching, this should pop up. &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/415f875ae10dc06cc4c7a10544ec5b41/46115/screenshot-cpp-hello-world-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.833333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB4ElEQVQoz11TaW+bQBDl//+q9EPkNMY1pxsTR7KFU9ewsLDLctiNXmfGh9wiPS3M8ebNzOIFQYgoihCGIUI6I0GMJEkQxTHiOLkivvv+x3IZSP5i8QPe7OU7dvke+X6P7XaLPM9xPB7lVGWBw+GAz89fUEpB6wZ1Xf8DrTWapoExBussg7dcrfFbWzRXR9/3mKYJI0GZATXZOXgcR7F/ff2hmEGK7nY7Kdx1HfjJSZgXE2HbOVSVulfiACbQ1ogKtltrBUxqbUeKK1FflqWo5Pgs28BL0pRItATcVJxOJ8KE1pVQlZIEJuNCrLAjQkedKFUKIYvg5/39A16arGCNJWP7QDihHyY4N8gIGMMwiG+aTrBkd64T9VyEfXfCeBmhqTWORSFDN0TOBMaRQmq1qirBRaWRQm03SlxFhG3bikLOEcLnIEOuqBonEjGDlTb9GR+FIbJaCLllVnI+n+VsbI+iKGU5BYlxzl1m6McZGqooC6GkfhilrX480VKcKGA8zte5nlq1cpW4WNs+zDAMA2qnRknOktRwkAy70teNX7bL7zfwNyviOXKxG+lmQ4RPT9/khr+++pj5IWbzAL6/wJzAp08+//oehpH8PUmS4u1tjXT1k74TstMfla7x/DLHX1OLNNVoBTmVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/415f875ae10dc06cc4c7a10544ec5b41/8ac56/screenshot-cpp-hello-world-3.webp 240w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/d3be9/screenshot-cpp-hello-world-3.webp 480w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/e46b2/screenshot-cpp-hello-world-3.webp 960w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/e027f/screenshot-cpp-hello-world-3.webp 1290w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/415f875ae10dc06cc4c7a10544ec5b41/8ff5a/screenshot-cpp-hello-world-3.png 240w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/e85cb/screenshot-cpp-hello-world-3.png 480w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/d9199/screenshot-cpp-hello-world-3.png 960w,
+/static/415f875ae10dc06cc4c7a10544ec5b41/46115/screenshot-cpp-hello-world-3.png 1290w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/415f875ae10dc06cc4c7a10544ec5b41/d9199/screenshot-cpp-hello-world-3.png&quot;
+          alt=&quot;&amp;quot;Check .NET, Desktop with C++, Universal Windows Platform&amp;quot;&quot;
+          title=&quot;&amp;quot;Check .NET, Desktop with C++, Universal Windows Platform&amp;quot;&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt; I recommend checking the following items. You can check other items out if you like but you can always install them at a later time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET desktop development&lt;/li&gt;
+&lt;li&gt;Desktop development with C++&lt;/li&gt;
+&lt;li&gt;Universal Windows Platform development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wait for the installation to finish. This will take some time depending on your internet connection.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9b514e7358da72d3a7fa555eabc4834b/46115/screenshot-cpp-hello-world-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.833333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABXklEQVQoz5VSy27DIBDk/7+wh94ixXbjmqd5k+kuTpAb9dBYGoMxDLMzK0KIcNbBWgvnHIwxCCEg50LI/wLvjzF2CCa5ThPmecayLJhozqSl/Cbk71LyH2tl7OVR7D7AWE+3eKSU0FrrqLUO8Gb+xzgTRlLG5zKtP0lFThVaWki5QSkFrfWQz3iSSKnIFjcO1loglcF1XrFuBs7Hg7C1ip0ObsrCUvnuAS6bRyZllU/iQViY0GL62rCsCkob2hsgUsgwOmDfdyQuwftOcDz3/mYL0qOss1+aFK+bhjIshm2jUGqpRGjweZnxcVkxb7Z7UruPB+73+/D2XPK3ZIUSmzS9Qs5DNFLjaHKjn5puSdQuZwIGf3e9NJ4V7runQN0I5giFEyOVjNZTPcoa46k1XlspxAwfj/VWj7YSr/30Drxn7ylEUqpspAsSBBsZafIuOCQOZF5uWCjpafUUUsAPEjBZfmMVoSYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/9b514e7358da72d3a7fa555eabc4834b/8ac56/screenshot-cpp-hello-world-4.webp 240w,
+/static/9b514e7358da72d3a7fa555eabc4834b/d3be9/screenshot-cpp-hello-world-4.webp 480w,
+/static/9b514e7358da72d3a7fa555eabc4834b/e46b2/screenshot-cpp-hello-world-4.webp 960w,
+/static/9b514e7358da72d3a7fa555eabc4834b/e027f/screenshot-cpp-hello-world-4.webp 1290w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/9b514e7358da72d3a7fa555eabc4834b/8ff5a/screenshot-cpp-hello-world-4.png 240w,
+/static/9b514e7358da72d3a7fa555eabc4834b/e85cb/screenshot-cpp-hello-world-4.png 480w,
+/static/9b514e7358da72d3a7fa555eabc4834b/d9199/screenshot-cpp-hello-world-4.png 960w,
+/static/9b514e7358da72d3a7fa555eabc4834b/46115/screenshot-cpp-hello-world-4.png 1290w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/9b514e7358da72d3a7fa555eabc4834b/d9199/screenshot-cpp-hello-world-4.png&quot;
+          alt=&quot;&amp;quot;Visual studio community 2019 installing&amp;quot;&quot;
+          title=&quot;&amp;quot;Visual studio community 2019 installing&amp;quot;&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Once the installation finishes you can now open up Visual Studio. Upon opening it choose &lt;strong&gt;Create a new project&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Choose &lt;strong&gt;Console App&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;For now we are naming our project &lt;strong&gt;HelloWorld&lt;/strong&gt; so put that on both the &lt;em&gt;Project Name&lt;/em&gt; and &lt;em&gt;Solution Name&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;The project will be created with the &lt;em&gt;boilerplate&lt;/em&gt; code.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code&quot; aria-label=&quot;code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iostream&amp;gt;
+
+namespace std;
+
+int main() {
+    std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;explanation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#explanation&quot; aria-label=&quot;explanation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Explanation&lt;/h2&gt;
+&lt;p&gt;This is the boilerplate code that you will get when you create a console app with Visual Studio (other IDEs might be similar). You can try running your code with &lt;code class=&quot;language-text&quot;&gt;CTRL + F5&lt;/code&gt; or by clicking &lt;strong&gt;Build&lt;/strong&gt; then choosing &lt;strong&gt;Build Solution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s try to cover the code line by line.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This include statement tells the compiler (the program that translates your code to something the computer can understand) that we will be using the &lt;code class=&quot;language-text&quot;&gt;iostream&lt;/code&gt; library.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;using namespace std;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In order to avoid confusing the compiler on potential naming conflicts (i.e. duplicate names), we specify the namespaces that we will use in our program. In this case we specified that we will be using functions, variables, etc from the &lt;code class=&quot;language-text&quot;&gt;std&lt;/code&gt; namespace.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;int main()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is your very first encounter of a function declaration(more on that on another topic). The main function is a special function because it is the first thing that runs in your program. For now, we will put the body of our code inside the scope of main()&lt;/p&gt;
+&lt;p&gt;Scope - every function declaration gets followed by that function’s scope;
+the scope of a function is everything inside the { }&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you ran the program before reading this, congrats! You might already know what this line does. It makes your program output to the console &lt;code class=&quot;language-text&quot;&gt;Hello World!&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;return 0;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All functions (except void functions) must return something. Returns in general will be covered in the &lt;em&gt;functions&lt;/em&gt; topic. For the main function in particular &lt;code class=&quot;language-text&quot;&gt;return 0;&lt;/code&gt; tells your program to terminate.
+*As an experiment, try putting another &lt;code class=&quot;language-text&quot;&gt;std::cout &amp;lt;&amp;lt; &amp;quot;foo&amp;quot;;&lt;/code&gt; after &lt;code class=&quot;language-text&quot;&gt;return 0;&lt;/code&gt; then run your program again. You don’t see &lt;code class=&quot;language-text&quot;&gt;foo&lt;/code&gt; outputted because your program terminated before it can output it.&lt;/p&gt;
+&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;</content:encoded></item></channel></rss>
