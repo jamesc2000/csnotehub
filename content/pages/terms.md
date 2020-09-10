@@ -4,8 +4,6 @@ template: "page"
 socialImage: "/media/logo.svg"
 ---
 
-# Terms and Conditions
-
 This website (csnotehub.com) serves the purpose of providing **supplementary** information in the form of summarized lessons or "notelets". Certain mistakes or inaccuracies may be found in this website. The author or the copyright holders hold no liabilities that may arise from these mistakes or inaccuracies. Content that is within this website is free to distribute and use non-commercially.
 
 ## General
