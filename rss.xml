@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Sep 2020 13:29:28 GMT</lastBuildDate><item><title><![CDATA[Hello World!]]></title><description><![CDATA[First time learning programming? Start here! A C++ tutorial for beginners, learn how to write "Hello World" and how it works in C++]]></description><link>http://csnotehub.com/posts/cpp-hello-world</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-hello-world</guid><pubDate>Wed, 09 Sep 2020 22:24:34 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Sep 2020 13:00:38 GMT</lastBuildDate><item><title><![CDATA[Variables and Data Types]]></title><description><![CDATA[Variables in C++ are declared with "DataType varName = value;". The name of the variable can be anyting you want while putting the value during declaration is optional.]]></description><link>http://csnotehub.com/posts/cpp-variables</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-variables</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#anatomy-of-a-variable&quot;&gt;Anatomy of a Variable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#basic-data-types&quot;&gt;Basic Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#variables-in-action&quot;&gt;Variables in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;anatomy-of-a-variable&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#anatomy-of-a-variable&quot; aria-label=&quot;anatomy of a variable permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Anatomy of a Variable&lt;/h2&gt;
+&lt;p&gt;Let’s take a look at an example.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;int ourVariable = 42;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can see 3 parts on the variable declaration.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;int&lt;/code&gt; - this is our &lt;em&gt;data type&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;ourVariable&lt;/code&gt; - this is the name of the variable&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;42&lt;/code&gt; - this is the &lt;em&gt;initial value&lt;/em&gt; of the variable&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All variable names must:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Begin with a letter or an underscore ”_“.&lt;/li&gt;
+&lt;li&gt;Spaces and special characters are not allowed.&lt;/li&gt;
+&lt;li&gt;Must &lt;strong&gt;not&lt;/strong&gt; be a &lt;a href=&quot;https://en.cppreference.com/w/cpp/keyword&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;reserved word&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;basic-data-types&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#basic-data-types&quot; aria-label=&quot;basic data types permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Basic Data Types&lt;/h2&gt;
+&lt;p&gt;Also called &lt;strong&gt;Primitive Data Types&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;void - holds &lt;strong&gt;nothing&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;bool - holds &lt;strong&gt;true&lt;/strong&gt; or &lt;strong&gt;false&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;int - holds &lt;strong&gt;whole numbers&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;float - holds &lt;strong&gt;numbers with decimals&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;double - holds &lt;strong&gt;numbers with decimals&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;char - holds &lt;strong&gt;single characters&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;variables-in-action&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#variables-in-action&quot; aria-label=&quot;variables in action permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Variables in Action&lt;/h2&gt;
+&lt;p&gt;You can use variables in C++ as like a variable in math. You can save a value on them in order to recall it later and/or multiple times. See the example below:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+    int variable1 = 12;
+    char myLetter = &amp;#39;G&amp;#39;;
+    std::cout &amp;lt;&amp;lt; variable1 &amp;lt;&amp;lt; std::endl;
+    std::cout &amp;lt;&amp;lt; myLetter &amp;lt;&amp;lt; std::endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Expected Output:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;12
+G&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus&lt;/a&gt;
+&lt;a href=&quot;https://en.cppreference.com/w/cpp/keyword&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.cppreference.com/w/cpp/keyword&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World!]]></title><description><![CDATA[First time learning programming? Start here! A C++ tutorial for beginners, learn how to write "Hello World" and how it works in C++]]></description><link>http://csnotehub.com/posts/cpp-hello-world</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-hello-world</guid><pubDate>Wed, 09 Sep 2020 22:24:34 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#setting-up&quot;&gt;Setting up&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#explanation&quot;&gt;Explanation&lt;/a&gt;&lt;/li&gt;
@@ -228,4 +278,6 @@ the scope of a function is everything inside the { }&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;All functions (except void functions) must return something. Returns in general will be covered in the &lt;em&gt;functions&lt;/em&gt; topic. For the main function in particular &lt;code class=&quot;language-text&quot;&gt;return 0;&lt;/code&gt; tells your program to terminate.
 *As an experiment, try putting another &lt;code class=&quot;language-text&quot;&gt;std::cout &amp;lt;&amp;lt; &amp;quot;foo&amp;quot;;&lt;/code&gt; after &lt;code class=&quot;language-text&quot;&gt;return 0;&lt;/code&gt; then run your program again. You don’t see &lt;code class=&quot;language-text&quot;&gt;foo&lt;/code&gt; outputted because your program terminated before it can output it.&lt;/p&gt;
-&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;</content:encoded></item></channel></rss>
+&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652&lt;/a&gt;
+&lt;a href=&quot;https://en.cppreference.com/w/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.cppreference.com/w/&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
