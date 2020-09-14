@@ -34,7 +34,9 @@ If you are running Windows then I would recommend using Visual Studio since it's
 6. Wait for the installation to finish. This will take some time depending on your internet connection.
 !["Visual studio community 2019 installing"](/media/screenshot-cpp-hello-world-4.PNG)
 7. Once the installation finishes you can now open up Visual Studio. Upon opening it choose **Create a new project**.
+!["Choose create a new project"](/media/screenshot-cpp-hello-world-5.PNG)
 8. Choose **Console App**.
+!["Choose console app that has a C++ tag](/media/screenshot-cpp-hello-world-6.PNG)
 9. For now we are naming our project **HelloWorld** so put that on both the *Project Name* and *Solution Name*.
 10. The project will be created with the *boilerplate* code.
   
