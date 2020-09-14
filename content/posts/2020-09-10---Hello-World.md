@@ -79,6 +79,9 @@ If you ran the program before reading this, congrats! You might already know wha
 All functions (except void functions) must return something. Returns in general will be covered in the *functions* topic. For the main function in particular `return 0;` tells your program to terminate.
 *As an experiment, try putting another `std::cout << "foo";` after `return 0;` then run your program again. You don't see `foo` outputted because your program terminated before it can output it.
 
+## Related
+- [Variables and Data Types](/cpp-variables)
+
 ## References
-https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652
-https://en.cppreference.com/w/
+- https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652
+- https://en.cppreference.com/w/

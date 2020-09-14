@@ -1,6 +1,6 @@
 ---
 title: Variables and Data Types
-date: "2020-09-11T12:50:03+00:004"
+date: "2020-09-11T12:50:03"
 template: "post"
 draft: false 
 slug: "cpp-variables"
@@ -66,6 +66,10 @@ Expected Output:
     12
     G
 
+## Related
+- [If Statements](/cpp-if-statements)
+- [Hello World](/cpp-hello-world)
+
 ## References
-https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus
-https://en.cppreference.com/w/cpp/keyword
+- https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus
+- https://en.cppreference.com/w/cpp/keyword
