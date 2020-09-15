@@ -82,8 +82,5 @@ All functions (except void functions) must return something. Returns in general 
 *As an experiment, try putting another `std::cout << "foo";` after `return 0;` then run your program again. You don't see `foo` outputted because your program terminated before it can output it.
 
 ## Related
-- [Variables and Data Types](/cpp-variables)
 
-## References
-- https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652
-- https://en.cppreference.com/w/
+- [Variables and Data Types](/cpp-variables)
