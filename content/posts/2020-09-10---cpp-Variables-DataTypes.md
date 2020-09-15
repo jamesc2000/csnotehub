@@ -69,7 +69,3 @@ Expected Output:
 ## Related
 - [If Statements](/cpp-if-statements)
 - [Hello World](/cpp-hello-world)
-
-## References
-- https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus
-- https://en.cppreference.com/w/cpp/keyword

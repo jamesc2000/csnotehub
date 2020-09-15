@@ -117,8 +117,3 @@ If statements and other related statements are very powerful. It's one of the mo
 
 ## Related:
 - [Variables and Data Types](/cpp-variables)
-
-## References:
-
-- https://www.programiz.com/c-programming/c-if-else-statement
-- https://www.tutorialspoint.com/cplusplus/cpp_if_statement.htm
