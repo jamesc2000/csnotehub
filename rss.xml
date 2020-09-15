@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Sep 2020 12:22:28 GMT</lastBuildDate><item><title><![CDATA[If Statements]]></title><description><![CDATA[C++ and other programming languages use if statements to control the flow of the program. Syntax: if (condition) { //code }]]></description><link>http://csnotehub.com/posts/cpp-if-statements</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-if-statements</guid><pubDate>Mon, 14 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Sep 2020 13:03:38 GMT</lastBuildDate><item><title><![CDATA[Input and Output]]></title><description><![CDATA[Input and output in C++ are done with cin >> and cout << respectively. Before using them, be sure to include the iostream library header.]]></description><link>http://csnotehub.com/posts/cpp-if-statements</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-if-statements</guid><pubDate>Tue, 15 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#output&quot;&gt;Output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#input&quot;&gt;Input&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#using-them-with-variables&quot;&gt;Using them with variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Input and output in C++ are done with cin &gt;&gt; and cout &amp;#x3C;&amp;#x3C; respectively. Before using them, be sure to include the iostream library header.&lt;/p&gt;
+&lt;p&gt;On the top of almost all programs written in c++, you would see the include statement &lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt;. The iostream library header is what enables us to use &lt;code class=&quot;language-text&quot;&gt;cin&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;cout&lt;/code&gt;, while &lt;code class=&quot;language-text&quot;&gt;using namespace std;&lt;/code&gt; makes it possible to omit &lt;code class=&quot;language-text&quot;&gt;std::&lt;/code&gt; before &lt;code class=&quot;language-text&quot;&gt;cin&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;cout&lt;/code&gt;. Without &lt;code class=&quot;language-text&quot;&gt;using namespace std;&lt;/code&gt; you need to use &lt;code class=&quot;language-text&quot;&gt;std::cin&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;std::cout&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;output&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#output&quot; aria-label=&quot;output permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Output&lt;/h2&gt;
+&lt;p&gt;Output with C++ is done with &lt;code class=&quot;language-text&quot;&gt;cout&lt;/code&gt; which is short for console output. Take note of the direction of the arrows &lt;code class=&quot;language-text&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+    cout &amp;lt;&amp;lt; &amp;quot;Hello world!&amp;quot; &amp;lt;&amp;lt; endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output 1:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Hello world!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can output any &lt;a href=&quot;/cpp-variables&quot;&gt;data type&lt;/a&gt;, in this case “Hello world!” is a string, but it can even be a variable. The &lt;code class=&quot;language-text&quot;&gt;endl&lt;/code&gt; after another &lt;code class=&quot;language-text&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; denotes a line ending. Take note that everytime you want to output another thing, you can chain or stream your outputs using the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; operator.&lt;/p&gt;
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;int main() {
+    cout &amp;lt;&amp;lt; &amp;quot;Hello world!&amp;quot; &amp;lt;&amp;lt; &amp;quot; another thing&amp;quot; &amp;lt;&amp;lt; endl &amp;lt;&amp;lt; &amp;quot;Now this should be on the next line&amp;quot;;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output 2:
+Hello world! another thing
+Now this should be on the next line&lt;/p&gt;
+&lt;h2 id=&quot;input&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#input&quot; aria-label=&quot;input permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Input&lt;/h2&gt;
+&lt;p&gt;Input on the other hand is done with &lt;code class=&quot;language-text&quot;&gt;cin&lt;/code&gt; which is short for console input. Take note of the direction of the arrows &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt;. You always definitely need to use &lt;a href=&quot;/cpp-variables&quot;&gt;variables&lt;/a&gt; together with &lt;code class=&quot;language-text&quot;&gt;cin&lt;/code&gt; as you need something to store the user input to.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#include &amp;lt;iosteram&amp;gt;
+
+using namespace std;
+
+int main() {
+    int input1;
+
+    cout &amp;lt;&amp;lt; &amp;quot;Please enter a number&amp;quot; &amp;lt;&amp;lt; endl;
+    cin &amp;gt;&amp;gt; input1;
+
+    cout &amp;lt;&amp;lt; &amp;quot;You have entered &amp;quot; &amp;lt;&amp;lt; input1;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Please enter a number
+50
+You have entered 50&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;See how the program first asked the user to input a number? After asking the program, it awaits our input and it will not proceed until we entered our input, in this case I entered &lt;code class=&quot;language-text&quot;&gt;50&lt;/code&gt;. The number we inputted then gets &lt;strong&gt;stored&lt;/strong&gt; to an int called &lt;code class=&quot;language-text&quot;&gt;input1&lt;/code&gt;. When we output &lt;code class=&quot;language-text&quot;&gt;input1&lt;/code&gt; it outputs &lt;code class=&quot;language-text&quot;&gt;50&lt;/code&gt; which was what was stored in that variable.&lt;/p&gt;
+&lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/cpp-hello-world&quot;&gt;Hello World&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[If Statements]]></title><description><![CDATA[C++ and other programming languages use if statements to control the flow of the program. Syntax: if (condition) { //code }]]></description><link>http://csnotehub.com/posts/cpp-if-statements</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-if-statements</guid><pubDate>Mon, 14 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#if-statement&quot;&gt;If Statement&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#if...else&quot;&gt;If…Else&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#if...else-if&quot;&gt;If…Else If&lt;/a&gt;&lt;/li&gt;
@@ -77,11 +136,6 @@ foo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.programiz.com/c-programming/c-if-else-statement&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.programiz.com/c-programming/c-if-else-statement&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/cplusplus/cpp_if_statement.htm&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.tutorialspoint.com/cplusplus/cpp_if_statement.htm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Variables and Data Types]]></title><description><![CDATA[Variables in C++ are declared with "DataType varName = value;". The name of the variable can be anyting you want while putting the value during declaration is optional.]]></description><link>http://csnotehub.com/posts/cpp-variables</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-variables</guid><pubDate>Fri, 11 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#anatomy-of-a-variable&quot;&gt;Anatomy of a Variable&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#basic-data-types&quot;&gt;Basic Data Types&lt;/a&gt;&lt;/li&gt;
@@ -134,11 +188,6 @@ G&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/cpp-if-statements&quot;&gt;If Statements&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/cpp-hello-world&quot;&gt;Hello World&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.tutorialspoint.com/What-are-primitive-data-type-in-Cplusplus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.cppreference.com/w/cpp/keyword&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.cppreference.com/w/cpp/keyword&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hello World!]]></title><description><![CDATA[First time learning programming? Start here! A C++ tutorial for beginners, learn how to write "Hello World" and how it works in C++]]></description><link>http://csnotehub.com/posts/cpp-hello-world</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-hello-world</guid><pubDate>Wed, 09 Sep 2020 22:24:34 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#setting-up&quot;&gt;Setting up&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
@@ -458,9 +507,4 @@ the scope of a function is everything inside the { }&lt;/p&gt;
 &lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://medium.com/breaktheloop/why-using-namespace-std-is-used-after-including-iostream-dc5ae45db652&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.cppreference.com/w/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.cppreference.com/w/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
