@@ -16,7 +16,7 @@ description: "Variables in C++ are declared with \"DataType varName = value;\". 
 - [Anatomy of a Variable](#anatomy-of-a-variable)
 - [Basic Data Types](#basic-data-types)
 - [Variables in Action](#variables-in-action)
-- [References](#references)
+- [Related](#related)
 
 ## Anatomy of a Variable
 
@@ -67,5 +67,6 @@ Expected Output:
     G
 
 ## Related
-- [If Statements](/cpp-if-statements)
-- [Hello World](/cpp-hello-world)
+
+- [If Statements](/posts/cpp-if-statements)
+- [Hello World](/posts/cpp-hello-world)

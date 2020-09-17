@@ -15,7 +15,7 @@ description: "First time learning programming? Start here! A C++ tutorial for be
 - [Setting up](#setting-up)
 - [Code](#code)
 - [Explanation](#explanation)
-- [References](#references)
+- [Related](#related)
 
 ## Setting up
 
@@ -83,4 +83,4 @@ All functions (except void functions) must return something. Returns in general 
 
 ## Related
 
-- [Variables and Data Types](/cpp-variables)
+- [Variables and Data Types](/posts/cpp-variables)
