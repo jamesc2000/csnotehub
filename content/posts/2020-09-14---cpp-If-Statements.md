@@ -16,7 +16,6 @@ description: "C++ and other programming languages use if statements to control t
 - [If...Else](#if...else)
 - [If...Else If](#if...else-if)
 - [Related](#related)
-- [References](#references)
 
 If statements in C++ and other programming languages are used to control the flow of the program. Code put inside the brackets `{ }` of the if statement are only ran if the condition inside the parentheses `( )` are true.
 
@@ -116,4 +115,5 @@ See how this one only outputted `foo`? That happened because both the if conditi
 If statements and other related statements are very powerful. It's one of the most used statements in programming. To make best use of these, it's best to use variables in tandem. This makes it so that your program can handle variable inputs and do operations accordingly.
 
 ## Related:
-- [Variables and Data Types](/cpp-variables)
+
+- [Variables and Data Types](/posts/cpp-variables)

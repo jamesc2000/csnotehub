@@ -3,7 +3,7 @@ title: Input and Output
 date: "2020-09-15T12:50:03"
 template: "post"
 draft: false 
-slug: "cpp-if-statements"
+slug: "cpp-input-output"
 category: "C++"
 tags:
   - "C++"
@@ -18,7 +18,6 @@ description: "Input and output in C++ are done with cin >> and cout << respectiv
 - [Input](#input)
 - [Using them with variables](#using-them-with-variables)
 - [Related](#related)
-- [References](#references)
 
 Input and output in C++ are done with cin >> and cout << respectively. Before using them, be sure to include the iostream library header.
 
@@ -88,5 +87,6 @@ Output:
 See how the program first asked the user to input a number? After asking the program, it awaits our input and it will not proceed until we entered our input, in this case I entered `50`. The number we inputted then gets **stored** to an int called `input1`. When we output `input1` it outputs `50` which was what was stored in that variable.
 
 ## Related:
-- [Variables and Data Types](/cpp-variables)
-- [Hello World](/cpp-hello-world)
+
+- [Variables and Data Types](/posts/cpp-variables)
+- [Hello World](/posts/cpp-hello-world)
