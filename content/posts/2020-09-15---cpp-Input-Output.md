@@ -3,7 +3,7 @@ title: Input and Output
 date: "2020-09-15T12:50:03"
 template: "post"
 draft: false 
-slug: "cpp-if-statements"
+slug: "cpp-input-output"
 category: "C++"
 tags:
   - "C++"
