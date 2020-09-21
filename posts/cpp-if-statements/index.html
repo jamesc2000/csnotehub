@@ -67,43 +67,43 @@
 <p>If statements in C++ and other programming languages are used to control the flow of the program. Code put inside the brackets <code class="language-text">{ }</code> of the if statement are only ran if the condition inside the parentheses <code class="language-text">( )</code> are true.</p>
 <h2 id="if-statement" style="position:relative;"><a href="#if-statement" aria-label="if statement permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If Statement</h2>
 <p>Example:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    if (1 + 1 == 3) {
-        cout &lt;&lt; &quot;Neat!&quot;;
-    }
-    cout &lt;&lt; &quot;foo&quot; &lt;&lt; endl;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Neat!"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"foo"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>The code above would compile but it wouldn’t output anything. This is because the if statement is <strong>checking</strong> if <code class="language-text">1 + 1</code> is equal to <code class="language-text">3</code>, in this case it isn’t, therefore would skip to the code that comes after the if statement (if applicable).</p>
 <h2 id="ifelse" style="position:relative;"><a href="#ifelse" aria-label="ifelse permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If…Else</h2>
 <p>Example 1:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    if (1 + 1 == 2) {
-        cout &lt;&lt; &quot;Neat!&quot; &lt;&lt; endl;
-    } else {
-        cout &lt;&lt; &quot;That condition was false.&quot; &lt;&lt; endl;
-    }
-    cout &lt;&lt; &quot;foo&quot;;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Neat!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"That condition was false."</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"foo"</span><span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>Output:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Neat!
 foo</code></pre></div>
 <p>The code above would run but this time the condition inside the if statement is true, therefore it will output <code class="language-text">Neat!</code>. However, it won’t run the statement inside the <code class="language-text">else</code> block, because that only runs when the condition is false.</p>
 <p>foo still gets outputted because it is outside the if statement. It gets outputted regardless of what happens inside the if block.</p>
 <p>Example 2:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    if (1 + 1 == 3) {
-        cout &lt;&lt; &quot;Neat!&quot; &lt;&lt; endl;
-    } else {
-        cout &lt;&lt; &quot;That condition was false.&quot; &lt;&lt; endl;
-    }
-    cout &lt;&lt; &quot;foo&quot;;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Neat!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"That condition was false."</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"foo"</span><span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>This is almost the same code as above with the only difference is that the condition of the if statement should be false, therefore it will run the code inside the else block but not run the code inside the if block.</p>
 <p>Output:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">That condition was false.
@@ -111,24 +111,24 @@ foo</code></pre></div>
 <h2 id="ifelse-if" style="position:relative;"><a href="#ifelse-if" aria-label="ifelse if permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If…else if</h2>
 <p>If…else is cool and all, but what about for when you want else only to run if a certain condition is met as well? This is where else if comes in.</p>
 <p>Example 1:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    if (1 + 1 == 3) {
-        cout &lt;&lt; &quot;Nice&quot;;
-    } else if (1 + 1 == 2) {
-        cout &lt;&lt; &quot;Cool&quot;;
-    }
-    cout &lt;&lt; &quot;foo&quot;;
-}</code></pre></div>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Nice"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Cool"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"foo"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>The example above works similarly to the one in <a href="#if...else">If…Else</a>, but this time we explicitly tell the compiler that only run the else if block if the original if condition failed <strong>and</strong> the if else condition passes.</p>
 <p>Example 2:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    if (1 + 1 == 3) {
-        cout &lt;&lt; &quot;Nice&quot;;
-    } else if (1 + 1 == 0) {
-        cout &lt;&lt; &quot;Cool&quot;
-    }
-    cout &lt;&lt; &quot;foo&quot;;
-}</code></pre></div>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Nice"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Cool"</span>
+    <span class="token punctuation">}</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"foo"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>Output:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">foo</code></pre></div>
 <p>See how this one only outputted <code class="language-text">foo</code>? That happened because both the if condition and the else if condition failed.</p>

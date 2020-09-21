@@ -69,44 +69,44 @@
 <h2 id="output" style="position:relative;"><a href="#output" aria-label="output permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Output</h2>
 <p>Output with C++ is done with <code class="language-text">cout</code> which is short for console output. Take note of the direction of the arrows <code class="language-text">&lt;&lt;</code>.</p>
 <p>Example 1:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">#include &lt;iostream&gt;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 
-using namespace std;
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-int main() {
-    cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello world!"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>Output 1:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Hello world!</code></pre></div>
 <p>You can output any <a href="/cpp-variables">data type</a>, in this case “Hello world!” is a string, but it can even be a variable. The <code class="language-text">endl</code> after another <code class="language-text">&lt;&lt;</code> denotes a line ending. Take note that everytime you want to output another thing, you can chain or stream your outputs using the <code class="language-text">&lt;&lt;</code> operator.</p>
 <p>Example 2:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int main() {
-    cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; &quot; another thing&quot; &lt;&lt; endl &lt;&lt; &quot;Now this should be on the next line&quot;;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello world!"</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" another thing"</span> <span class="token operator">&lt;&lt;</span> endl <span class="token operator">&lt;&lt;</span> <span class="token string">"Now this should be on the next line"</span><span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
-<p>Output 2:
-Hello world! another thing
-Now this should be on the next line</p>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Output 2:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Hello world! another thing
+Now this should be on the next line</code></pre></div>
 <h2 id="input" style="position:relative;"><a href="#input" aria-label="input permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Input</h2>
 <p>Input on the other hand is done with <code class="language-text">cin</code> which is short for console input. Take note of the direction of the arrows <code class="language-text">&gt;&gt;</code>. You always definitely need to use <a href="/cpp-variables">variables</a> together with <code class="language-text">cin</code> as you need something to store the user input to.</p>
 <p>Example:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">#include &lt;iosteram&gt;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iosteram></span></span>
 
-using namespace std;
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-int main() {
-    int input1;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> input1<span class="token punctuation">;</span>
 
-    cout &lt;&lt; &quot;Please enter a number&quot; &lt;&lt; endl;
-    cin &gt;&gt; input1;
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Please enter a number"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cin <span class="token operator">>></span> input1<span class="token punctuation">;</span>
 
-    cout &lt;&lt; &quot;You have entered &quot; &lt;&lt; input1;
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"You have entered "</span> <span class="token operator">&lt;&lt;</span> input1<span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>Output:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Please enter a number
 50

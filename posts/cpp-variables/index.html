@@ -66,7 +66,7 @@
 </ul>
 <h2 id="anatomy-of-a-variable" style="position:relative;"><a href="#anatomy-of-a-variable" aria-label="anatomy of a variable permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Anatomy of a Variable</h2>
 <p>Let’s take a look at an example.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">int ourVariable = 42;</code></pre></div>
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token keyword">int</span> ourVariable <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span></code></pre></div>
 <p>We can see 3 parts on the variable declaration.</p>
 <ol>
 <li><code class="language-text">int</code> - this is our <em>data type</em></li>
@@ -91,18 +91,18 @@
 </ol>
 <h2 id="variables-in-action" style="position:relative;"><a href="#variables-in-action" aria-label="variables in action permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Variables in Action</h2>
 <p>You can use variables in C++ as like a variable in math. You can save a value on them in order to recall it later and/or multiple times. See the example below:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">#include &lt;iostream&gt;
+<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 
-using namespace std;
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-int main() {
-    int variable1 = 12;
-    char myLetter = &#39;G&#39;;
-    std::cout &lt;&lt; variable1 &lt;&lt; std::endl;
-    std::cout &lt;&lt; myLetter &lt;&lt; std::endl;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> variable1 <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> myLetter <span class="token operator">=</span> <span class="token string">'G'</span><span class="token punctuation">;</span>
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> variable1 <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> myLetter <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
 
-    return 0;
-}</code></pre></div>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>Expected Output:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">12
 G</code></pre></div>
