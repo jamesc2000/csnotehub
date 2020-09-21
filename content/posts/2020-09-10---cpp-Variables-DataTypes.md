@@ -22,7 +22,9 @@ description: "Variables in C++ are declared with \"DataType varName = value;\". 
 
 Let's take a look at an example.
 
-    int ourVariable = 42;
+```cpp
+int ourVariable = 42;
+```
 
 We can see 3 parts on the variable declaration.
 1. `int` - this is our *data type*
@@ -48,23 +50,27 @@ Also called **Primitive Data Types**
 
 You can use variables in C++ as like a variable in math. You can save a value on them in order to recall it later and/or multiple times. See the example below:
 
-    #include <iostream>
+```cpp
+#include <iostream>
 
-    using namespace std;
+using namespace std;
 
-    int main() {
-        int variable1 = 12;
-        char myLetter = 'G';
-        std::cout << variable1 << std::endl;
-        std::cout << myLetter << std::endl;
+int main() {
+    int variable1 = 12;
+    char myLetter = 'G';
+    std::cout << variable1 << std::endl;
+    std::cout << myLetter << std::endl;
 
-        return 0;
-    }
+    return 0;
+}
+```
 
 Expected Output:
 
-    12
-    G
+```
+12
+G
+```
 
 ## Related
 

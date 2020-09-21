@@ -23,14 +23,16 @@ If statements in C++ and other programming languages are used to control the flo
 
 Example:
 
-    int main() {
-        if (1 + 1 == 3) {
-            cout << "Neat!";
-        }
-        cout << "foo" << endl;
-
-        return 0;
+```cpp
+int main() {
+    if (1 + 1 == 3) {
+        cout << "Neat!";
     }
+    cout << "foo" << endl;
+
+    return 0;
+}
+```
 
 The code above would compile but it wouldn't output anything. This is because the if statement is **checking** if `1 + 1` is equal to `3`, in this case it isn't, therefore would skip to the code that comes after the if statement (if applicable).
 
@@ -38,21 +40,25 @@ The code above would compile but it wouldn't output anything. This is because th
 
 Example 1:
 
-    int main() {
-        if (1 + 1 == 2) {
-            cout << "Neat!" << endl;
-        } else {
-            cout << "That condition was false." << endl;
-        }
-        cout << "foo";
-
-        return 0;
+```cpp
+int main() {
+    if (1 + 1 == 2) {
+        cout << "Neat!" << endl;
+    } else {
+        cout << "That condition was false." << endl;
     }
+    cout << "foo";
+
+    return 0;
+}
+```
 
 Output:
 
-    Neat!
-    foo
+```
+Neat!
+foo
+```
 
 The code above would run but this time the condition inside the if statement is true, therefore it will output `Neat!`. However, it won't run the statement inside the `else` block, because that only runs when the condition is false.
 
@@ -60,23 +66,27 @@ foo still gets outputted because it is outside the if statement. It gets outputt
 
 Example 2:
 
-    int main() {
-        if (1 + 1 == 3) {
-            cout << "Neat!" << endl;
-        } else {
-            cout << "That condition was false." << endl;
-        }
-        cout << "foo";
-
-        return 0;
+```cpp
+int main() {
+    if (1 + 1 == 3) {
+        cout << "Neat!" << endl;
+    } else {
+        cout << "That condition was false." << endl;
     }
+    cout << "foo";
+
+    return 0;
+}
+```
 
 This is almost the same code as above with the only difference is that the condition of the if statement should be false, therefore it will run the code inside the else block but not run the code inside the if block.
 
 Output:
 
-    That condition was false.
-    foo
+```
+That condition was false.
+foo
+```
 
 ## If...else if
 
@@ -84,31 +94,37 @@ If...else is cool and all, but what about for when you want else only to run if 
 
 Example 1:
 
-    int main() {
-        if (1 + 1 == 3) {
-            cout << "Nice";
-        } else if (1 + 1 == 2) {
-            cout << "Cool";
-        }
-        cout << "foo";
+```cpp
+int main() {
+    if (1 + 1 == 3) {
+        cout << "Nice";
+    } else if (1 + 1 == 2) {
+        cout << "Cool";
     }
+    cout << "foo";
+}
+```
 
 The example above works similarly to the one in [If...Else](#if...else), but this time we explicitly tell the compiler that only run the else if block if the original if condition failed **and** the if else condition passes.
 
 Example 2:
 
-    int main() {
-        if (1 + 1 == 3) {
-            cout << "Nice";
-        } else if (1 + 1 == 0) {
-            cout << "Cool"
-        }
-        cout << "foo";
+```cpp
+int main() {
+    if (1 + 1 == 3) {
+        cout << "Nice";
+    } else if (1 + 1 == 0) {
+        cout << "Cool"
     }
+    cout << "foo";
+}
+```
 
 Output:
 
-    foo
+```
+foo
+```
 
 See how this one only outputted `foo`? That happened because both the if condition and the else if condition failed.
 

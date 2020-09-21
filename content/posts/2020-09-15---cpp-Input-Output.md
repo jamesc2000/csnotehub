@@ -29,33 +29,42 @@ Output with C++ is done with `cout` which is short for console output. Take note
 
 Example 1:
 
-    #include <iostream>
+```cpp
+#include <iostream>
 
-    using namespace std;
+using namespace std;
 
-    int main() {
-        cout << "Hello world!" << endl;
+int main() {
+    cout << "Hello world!" << endl;
 
-        return 0;
-    }
+    return 0;
+}
+```
 
 Output 1:
 
-    Hello world!
+```
+Hello world!
+```
 
 You can output any [data type](/cpp-variables), in this case "Hello world!" is a string, but it can even be a variable. The `endl` after another `<<` denotes a line ending. Take note that everytime you want to output another thing, you can chain or stream your outputs using the `<<` operator.
 
 Example 2:
 
-    int main() {
-        cout << "Hello world!" << " another thing" << endl << "Now this should be on the next line";
+```cpp
+int main() {
+    cout << "Hello world!" << " another thing" << endl << "Now this should be on the next line";
 
-        return 0;
-    }
+    return 0;
+}
+```
 
 Output 2:
-    Hello world! another thing
-    Now this should be on the next line
+
+```
+Hello world! another thing
+Now this should be on the next line
+```
 
 ## Input
 
@@ -63,26 +72,30 @@ Input on the other hand is done with `cin` which is short for console input. Tak
 
 Example:
 
-    #include <iosteram>
+```cpp
+#include <iosteram>
 
-    using namespace std;
+using namespace std;
 
-    int main() {
-        int input1;
+int main() {
+    int input1;
 
-        cout << "Please enter a number" << endl;
-        cin >> input1;
+    cout << "Please enter a number" << endl;
+    cin >> input1;
 
-        cout << "You have entered " << input1;
+    cout << "You have entered " << input1;
 
-        return 0;
-    }
+    return 0;
+}
+```
 
 Output:
 
-    Please enter a number
-    50
-    You have entered 50
+```
+Please enter a number
+50
+You have entered 50
+```
 
 See how the program first asked the user to input a number? After asking the program, it awaits our input and it will not proceed until we entered our input, in this case I entered `50`. The number we inputted then gets **stored** to an int called `input1`. When we output `input1` it outputs `50` which was what was stored in that variable.
 

@@ -22,14 +22,14 @@ description: "While loops check the condition before proceeding with an iteratio
 
 While loops first test the condition before running whats inside its scope. Following the same logic with if statements, while that condition is true, the loop will continue to run.
 
-```c++
+```cpp
 #include <iostream>
 
 using namespace std;
 
 int main() {
-
-    while (true) {  // The condition is always true, the loop will run forever
+    // The condition is always true, the loop will run forever
+    while (true) {  
         cout << "Infinite loop!" << endl;
     }
 
@@ -43,11 +43,11 @@ int main() {
 
 In this section we'll make a program that counts from 0 to 25. We first need to have a variable because we need something to increase by 1 every iteration, and then the while loop should check if that variable is still less than 25.
 
-```c++
+```cpp
 int main() {
     int counter = 0; // We will start from 0
-
-    while (counter <= 25) { // If counter is below or equal to 25, run
+    // If counter is below or equal to 25, run
+    while (counter <= 25) { 
         cout << counter << endl;
         counter++ // The ++ means increase this variable by 1
     }
