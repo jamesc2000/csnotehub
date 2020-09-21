@@ -29,7 +29,7 @@ module.exports = {
     photo: '/media/logo.svg',
     bio: '',
     contacts: {
-      email: 'jlacruz2019@plm.edu.ph',
+      email: 'contact@csnotehub.com',
       facebook: '',
       telegram: '',
       twitter: '',
