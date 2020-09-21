@@ -43,14 +43,16 @@ If you are running Windows then I would recommend using Visual Studio since it's
 
 ## Code
 
-    #include <iostream>
-    
-    namespace std;
+```cpp
+#include <iostream>
 
-    int main() {
-        std::cout << "Hello World!";
-        return 0;
-    }
+namespace std;
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+```
 
 ## Explanation
 

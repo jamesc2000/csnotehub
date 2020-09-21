@@ -23,43 +23,49 @@ If statements are also more useful if used together with [variables](/cpp-variab
 
 Let's say in our program that if the user inputted a number less than 5, it outputs `Too low`, while if the user inputs a number greater than 5, it outputs `Too high`, however if the user inputs exactly 5 the program outputs `Just right`.
 
-Example:
+Example 1:
 
-    #include <iostream>
+```cpp
+#include <iostream>
 
-    using namespace std;
+using namespace std;
 
-    int main() {
-        int input;
+int main() {
+    int input;
 
-        cout << "Input a number:" << endl;
+    cout << "Input a number:" << endl;
 
-        cin >> input;
+    cin >> input;
 
-        if (input == 5) {       // Checks if input is equal to 5
-            cout << "Just right" << endl;
-        } else if (input < 5) { // Checks if input is less than 5
-            cout << "Too low" << endl;
-        } else if (input > 5) { // Checks if input is more than 5
-            cout << "Too high" << endl;
-        }
-
-        return 0;
+    if (input == 5) {       // Checks if input is equal to 5
+        cout << "Just right" << endl;
+    } else if (input < 5) { // Checks if input is less than 5
+        cout << "Too low" << endl;
+    } else if (input > 5) { // Checks if input is more than 5
+        cout << "Too high" << endl;
     }
+
+    return 0;
+}
+```
 
 The `==` operator compares the values if they are the same.
 
-Output 1:
+Output 1a:
 
-    Input a number:
-    3
-    Too low
+```
+Input a number:
+3
+Too low
+```
 
-Output 2:
+Output 1b:
 
-    Input a number:
-    8
-    Too high
+```
+Input a number:
+8
+Too high
+```
 
 ## Even/Odd
 
@@ -74,19 +80,21 @@ Let's modify the main function of our previous program.
 
 Example:
 
-    int main() {
-        int input;
+```cpp
+int main() {
+    int input;
 
-        cout << "Enter a number: << endl;
+    cout << "Enter a number:" << endl;
 
-        if (input % 2 == 0) {        // Checks if remainder is 0
-            cout << "The number you entered is even" << endl;
-        } else if (input % 2 != 0) { // Checks if remainder is not 0
-            cout << "The number you entered is odd" << endl;
-        }
-
-        return 0;
+    if (input % 2 == 0) {        // Checks if remainder is 0
+        cout << "The number you entered is even" << endl;
+    } else if (input % 2 != 0) { // Checks if remainder is not 0
+        cout << "The number you entered is odd" << endl;
     }
+
+    return 0;
+}
+```
 
 The `!=` operator checks if the values are **not** the same.
 
