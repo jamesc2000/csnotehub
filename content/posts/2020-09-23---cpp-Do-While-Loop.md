@@ -15,8 +15,6 @@ description: "The difference between while and do while is that the code inside 
 ---
 
 - [Basic Syntax](#basic-syntax)
-- [Advanced Use Cases](#advanced-use-cases)
-- [Even Numbers 1-100](#even-numbers-1-100)
 - [Related](#related)
 
 The difference between do while and a normal [while loop](/posts/cpp-while-loop) is that the code inside the scope { } of the loop is ran first before evaluating the condition.
