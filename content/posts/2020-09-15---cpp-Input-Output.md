@@ -47,7 +47,7 @@ Output 1:
 Hello world!
 ```
 
-You can output any [data type](/cpp-variables), in this case "Hello world!" is a string, but it can even be a variable. The `endl` after another `<<` denotes a line ending. Take note that everytime you want to output another thing, you can chain or stream your outputs using the `<<` operator.
+You can output any [data type](/posts/cpp-variables), in this case "Hello world!" is a string, but it can even be a variable. The `endl` after another `<<` denotes a line ending. Take note that everytime you want to output another thing, you can chain or stream your outputs using the `<<` operator.
 
 Example 2:
 
@@ -68,7 +68,7 @@ Now this should be on the next line
 
 ## Input
 
-Input on the other hand is done with `cin` which is short for console input. Take note of the direction of the arrows `>>`. You always definitely need to use [variables](/cpp-variables) together with `cin` as you need something to store the user input to.
+Input on the other hand is done with `cin` which is short for console input. Take note of the direction of the arrows `>>`. You always definitely need to use [variables](/posts/cpp-variables) together with `cin` as you need something to store the user input to.
 
 Example:
 

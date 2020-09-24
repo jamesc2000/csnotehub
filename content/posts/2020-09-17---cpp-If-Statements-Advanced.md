@@ -19,7 +19,7 @@ description: "C++ and other programming languages use if statements to control t
 
 ## Using with variables
 
-If statements are also more useful if used together with [variables](/cpp-variables) and [input/output](/cpp-input-output). 
+If statements are also more useful if used together with [variables](/posts/cpp-variables) and [input/output](/posts/cpp-input-output). 
 
 Let's say in our program that if the user inputted a number less than 5, it outputs `Too low`, while if the user inputs a number greater than 5, it outputs `Too high`, however if the user inputs exactly 5 the program outputs `Just right`.
 
