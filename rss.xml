@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Sep 2020 12:42:33 GMT</lastBuildDate><item><title><![CDATA[Arrays]]></title><description><![CDATA[Arrays work similarly to sets in math. It's a collection of elements, but arrays are ordered through an index. The index of an element in an array is just its position from the start starting from index 0.]]></description><link>http://csnotehub.com/posts/cpp-arrays</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-arrays</guid><pubDate>Tue, 29 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Sep 2020 13:32:04 GMT</lastBuildDate><item><title><![CDATA[Arrays]]></title><description><![CDATA[Arrays work similarly to sets in math. It's a collection of elements, but arrays are ordered through an index. The index of an element in an array is just its position from the start starting from index 0.]]></description><link>http://csnotehub.com/posts/cpp-arrays</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-arrays</guid><pubDate>Tue, 29 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;#makingdeclaring-an-array&quot;&gt;Making/Declaring an Array&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -14,7 +14,51 @@
 &lt;h2 id=&quot;makingdeclaring-an-array&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#makingdeclaring-an-array&quot; aria-label=&quot;makingdeclaring an array permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making/Declaring an Array&lt;/h2&gt;
 &lt;p&gt;An array declaration looks like this &lt;code class=&quot;language-text&quot;&gt;int arrayName[5]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This declaration will give us an array named &lt;code class=&quot;language-text&quot;&gt;arrayName&lt;/code&gt; that can hold 5 integers.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;..%5C..%5Cstatic%5Cmedia%5Cgraphic-cpp-arrays-1.svg&quot; alt=&quot;Visual guide of an empty array with length 5&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/17deb55c807202f8f63f89e087eb8723/5551c/graphic-cpp-arrays-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.416666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAACgIAAAoCAEE435iAAACSElEQVQoz2N4vreEkeH/fwZs4H2TH/unTDvRTynW8p9SbaQ/5jvxv2/0ZceqGGjG8/2ljBA2AwPTHxEOwX+sDHxANt8/Lkb+/4wMvL9UhcV/WCmof3dWM/puq6T5S0NU6reSoNh/JqgakFoWBr4/opyCIDPAhj07VaP4fG9xxPMDpX7PD5b5A3EgEPuB8eFyv2fHq3yenaz2ANJez49UgMXg8hC1/s8PlPmCzACqU2R4erYu5umFBoenV5rlnl5sMHx6rr7o6aVGradXmhSenq93fnquLh9IywPVKADlcoBsl6eXgXKXGjWB/GKwnivNskB5F6BZkQzPztSGAF0pDHbt8SoWID8QFixAtiQQ+yDxPYFYCokf+OxEFSuYfbpGHKz3GdDUx6dqJEGC1/aXcgH5EYsmRoLD4+mZWnkgDoEZAGQHArECiK2jLgnWe/1AGTeIDzRDDsgPAynyfHG+PvXnvQ7vt5ebIp6crq15d6Up9MfdDl+gghQgrvh0o8Xvy81WPyC7HCT2636nD1BNCEgtSM+3O+3eLy/Upz85U+sBtnl6e5C4q62aWVacleL///9Z0qItlF1sVc1Pbs7jP7e9gDvCz0A7xEtP99bhcu79qzIEnKxVLNNjLJRBajPjLBW9nDSMu6q9JZBTER8QRwGxIpSvCsQBSPKWQGyLxI+BqmGA6vEFYlGEabwcHMxMjKpsrMxCID4rK7MwExOjuq6GBJO/mzYjCzOTLBDL5CbaMCrJCTGD5IBqwREJ0gPUq8zNxcYF4gMA0oIZ8mIzaWEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/17deb55c807202f8f63f89e087eb8723/8ac56/graphic-cpp-arrays-1.webp 240w,
+/static/17deb55c807202f8f63f89e087eb8723/d3be9/graphic-cpp-arrays-1.webp 480w,
+/static/17deb55c807202f8f63f89e087eb8723/e46b2/graphic-cpp-arrays-1.webp 960w,
+/static/17deb55c807202f8f63f89e087eb8723/f992d/graphic-cpp-arrays-1.webp 1440w,
+/static/17deb55c807202f8f63f89e087eb8723/24625/graphic-cpp-arrays-1.webp 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/17deb55c807202f8f63f89e087eb8723/8ff5a/graphic-cpp-arrays-1.png 240w,
+/static/17deb55c807202f8f63f89e087eb8723/e85cb/graphic-cpp-arrays-1.png 480w,
+/static/17deb55c807202f8f63f89e087eb8723/d9199/graphic-cpp-arrays-1.png 960w,
+/static/17deb55c807202f8f63f89e087eb8723/07a9c/graphic-cpp-arrays-1.png 1440w,
+/static/17deb55c807202f8f63f89e087eb8723/5551c/graphic-cpp-arrays-1.png 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/17deb55c807202f8f63f89e087eb8723/d9199/graphic-cpp-arrays-1.png&quot;
+          alt=&quot;Visual guide of an empty array with length 5&quot;
+          title=&quot;Visual guide of an empty array with length 5&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;The golden boxes in the figure represents the elements inside of the array. It’s empty for now because we didn’t set initial values for it.&lt;/p&gt;
 &lt;p&gt;The black boxes from 0 - 4 are the indexes of the array. Array indexes always start at 0 therefore the last index of an array is always -1 of the length&lt;/p&gt;
 &lt;h3 id=&quot;declaration-parts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#declaration-parts&quot; aria-label=&quot;declaration parts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Declaration parts&lt;/h3&gt;
@@ -26,14 +70,102 @@
 &lt;h3 id=&quot;declaring-with-initial-values&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#declaring-with-initial-values&quot; aria-label=&quot;declaring with initial values permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Declaring with initial values&lt;/h3&gt;
 &lt;p&gt;Like variables, arrays can have initial values that can be set during declaration.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;int arrayName[5] = [12, 5, 15, 78, 32]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;..%5C..%5Cstatic%5Cmedia%5Cgraphic-cpp-arrays-2.svg&quot; alt=&quot;Array declared with initial values&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/41ec44d90324b649e122734e725e7b46/5551c/graphic-cpp-arrays-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.416666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAACgIAAAoCAEE435iAAAClUlEQVQoz2N4vreEkeH/fwZs4H2TH/unTDvRTynW8p9SbaQ/5jvxv2/0ZceqGGjG8/2ljBA2AwPTLxEOwb+sDHxANt9fLkb+P4wMfL9UhcV/WCmof3NWM/pmq6T5S1NU6peSoNhvoNwfTkZ+sFoWoDpRTkGQGWDDnp2qUXy+pzjixYEyv+cHwTgQRL8AsQ+X+z07XuXz7GS1x/MTVZ7PjlT4Pz9c4ffiEFD8QJk/VK0/UK3vi73FEUB1igxPz9TGPLvU6PD6Vpvs88uNBk/P1Rc9udig/eRyk8KzCw3OT8/W5b+93iL3/FKjwrPz9TmPz9a53D9Xr/j2VpvG03N1xY/P1xsB9co8vdDg8uxsXSTD64sNQetnxUkCHauuqiAs9eNuuzeQzQHE0v8fd4t9vtHiAWRLALHS5xutrqe35MkC2eZALP//aa+nub6sKJBtvGNRsuyriw0BDC/O10cc35QLUiSRHGEm+u5KU6ipviwo4DneX22We32xMQjI5gHh15ca/R+erFYAsvmYmBgFPl5vCa3OdRYG8sWOrM9Wenm+PpThyelaz1cXGlL/f5ziCnRB2ONTNTUfr7WE/H/e5wn0QgowSCr/P+3xBLrGC8iueA4U+/92osf3O+2Bj07V1AINDf//frIr0KfpQLM8wBEzrS1I3NlG1SIz1lLx////LGnR5souQP6pLXn853cUcof56usEeerq3TlSwb1/VYaAo5WyVVqUuTJIbQZQj6ejhklnlbckciriA+IoIFaE8lWBOABJ3hKIbZH4MVA1DFA9vkAsijCNl4ODmYlRlY2VWQjEZ2VlFgaGkbquhgSTv5s2IwszkywQy+Qm2jAqyQkxg+SAakFhxwDSA9SrzM3FxgXiAwAkwhVLxFB3gwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/41ec44d90324b649e122734e725e7b46/8ac56/graphic-cpp-arrays-2.webp 240w,
+/static/41ec44d90324b649e122734e725e7b46/d3be9/graphic-cpp-arrays-2.webp 480w,
+/static/41ec44d90324b649e122734e725e7b46/e46b2/graphic-cpp-arrays-2.webp 960w,
+/static/41ec44d90324b649e122734e725e7b46/f992d/graphic-cpp-arrays-2.webp 1440w,
+/static/41ec44d90324b649e122734e725e7b46/24625/graphic-cpp-arrays-2.webp 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/41ec44d90324b649e122734e725e7b46/8ff5a/graphic-cpp-arrays-2.png 240w,
+/static/41ec44d90324b649e122734e725e7b46/e85cb/graphic-cpp-arrays-2.png 480w,
+/static/41ec44d90324b649e122734e725e7b46/d9199/graphic-cpp-arrays-2.png 960w,
+/static/41ec44d90324b649e122734e725e7b46/07a9c/graphic-cpp-arrays-2.png 1440w,
+/static/41ec44d90324b649e122734e725e7b46/5551c/graphic-cpp-arrays-2.png 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/41ec44d90324b649e122734e725e7b46/d9199/graphic-cpp-arrays-2.png&quot;
+          alt=&quot;Array declared with initial values&quot;
+          title=&quot;Array declared with initial values&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;reading-and-writing-values-to-an-array&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reading-and-writing-values-to-an-array&quot; aria-label=&quot;reading and writing values to an array permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reading and Writing Values to an Array&lt;/h2&gt;
 &lt;p&gt;You can set each individual element per &lt;em&gt;index&lt;/em&gt; in an array. You can also read them.&lt;/p&gt;
 &lt;h3 id=&quot;writing&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#writing&quot; aria-label=&quot;writing permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Writing&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Declare empty array with length 4&lt;/span&gt;
 numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;45&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Write the number 45 to the 0th index&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;* &lt;em&gt;You don’t have to put the two lines in the snippet on top of each other in your code&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;..%5C..%5Cstatic%5Cmedia%5Cgraphic-cpp-arrays-3.svg&quot; alt=&quot;Write 45 to 0th index of array&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/93324d2caf8894d35baf66d13bbf2d89/5551c/graphic-cpp-arrays-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.416666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAACgIAAAoCAEE435iAAACSklEQVQoz2N4eqmRAQRe7ClmnPz/PwMyeN/oy/Ypw1b0U6q1/Kc0G5mPRS7c7xt82ZHVVAP1PN9XwghiP7nWAhF8tSwVLAAy7pcoh+A/VgY+IJv3l4aoxHdbJY3vjqpGP6wVNX7qSkj/UhcRB8mB1PwR5RQEssF6Xy1JAdMMz07VgBnPztdrPttTHAG0zf/5oXL/5wfLAp8fLvd9drzK69nJai8g7f38SIUPSAwsd7DM//n+Ur/ne0sinp2p1QKbcbKageHp2TqIc0/XJn241Wbx/Xmf1JPz9fZPz9cXPb3cKPf0QoPS03N1EUAcBQwexaeXm+SenqsvAYrbPLnaLPv0YoMV0MAEkBlgs4AcsIEfrjX7h3nryQOZ1pMa/eXfXm70g4UTUI0hEBsj8YOfna4VhLqKG8gPgooDTYUa+PJ8fcTSyVESQKbgnhXp8i8v1IfDDACqsQBiK7iBZ+uiH56oFgex7x2tFATyIzAMfHK6JvT91ebE/+8nu7y90hT3+HRNzcdrLX7f77T7ATXkgfC3221+n663+AGDp+b1xYY4oJz3m0uNiUB+CNRiRoipoBgGRn9xmr28p6OGSWGqnQyQzxIfaqLh4aBucvNgGc+pLXm83s6aRrFBRpr//99hLctylPZy0jAG6fkPTW5PoWYxSIrzMUJ9AwpDfyCWg/JBseeDlOx8gdgIygYFjycQK4I4UjAz4KYCATs7iwAzM6MikOYD8VlYmCSYmRhVUyLNGW3NFBmBbBWgGDjsONhZeMFq2Vj4kcKaAQChMxDequg1DwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/93324d2caf8894d35baf66d13bbf2d89/8ac56/graphic-cpp-arrays-3.webp 240w,
+/static/93324d2caf8894d35baf66d13bbf2d89/d3be9/graphic-cpp-arrays-3.webp 480w,
+/static/93324d2caf8894d35baf66d13bbf2d89/e46b2/graphic-cpp-arrays-3.webp 960w,
+/static/93324d2caf8894d35baf66d13bbf2d89/f992d/graphic-cpp-arrays-3.webp 1440w,
+/static/93324d2caf8894d35baf66d13bbf2d89/24625/graphic-cpp-arrays-3.webp 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/93324d2caf8894d35baf66d13bbf2d89/8ff5a/graphic-cpp-arrays-3.png 240w,
+/static/93324d2caf8894d35baf66d13bbf2d89/e85cb/graphic-cpp-arrays-3.png 480w,
+/static/93324d2caf8894d35baf66d13bbf2d89/d9199/graphic-cpp-arrays-3.png 960w,
+/static/93324d2caf8894d35baf66d13bbf2d89/07a9c/graphic-cpp-arrays-3.png 1440w,
+/static/93324d2caf8894d35baf66d13bbf2d89/5551c/graphic-cpp-arrays-3.png 1763w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/93324d2caf8894d35baf66d13bbf2d89/d9199/graphic-cpp-arrays-3.png&quot;
+          alt=&quot;Write 45 to 0th index of array&quot;
+          title=&quot;Write 45 to 0th index of array&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
 
