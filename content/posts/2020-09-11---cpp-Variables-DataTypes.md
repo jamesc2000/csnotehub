@@ -13,12 +13,13 @@ tags:
 description: "Variables in C++ are declared with \"DataType varName = value;\". The name of the variable can be anyting you want while putting the value during declaration is optional."
 ---
 
-- [Anatomy of a Variable](#anatomy-of-a-variable)
+- [Making/Declaring a Variable](#makingdeclaring-a-variable)
+  - [Variable naming rules](#variable-naming-rules)
 - [Basic Data Types](#basic-data-types)
 - [Variables in Action](#variables-in-action)
 - [Related](#related)
 
-## Anatomy of a Variable
+## Making/Declaring a Variable 
 
 Let's take a look at an example.
 
@@ -30,6 +31,8 @@ We can see 3 parts on the variable declaration.
 1. `int` - this is our *data type*
 2. `ourVariable` - this is the name of the variable
 3. `42` - this is the *initial value* of the variable
+
+### Variable naming rules
 
 All variable names must:
 - Begin with a letter or an underscore "_".
@@ -76,3 +79,4 @@ G
 
 - [If Statements](/posts/cpp-if-statements)
 - [Hello World](/posts/cpp-hello-world)
+- [Arrays](/posts/cpp-arrays)
