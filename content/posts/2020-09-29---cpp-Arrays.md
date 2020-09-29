@@ -28,7 +28,7 @@ An array declaration looks like this `int arrayName[5]`
 
 This declaration will give us an array named `arrayName` that can hold 5 integers.
 
-![Visual guide of an empty array with length 5](/media/graphic-cpp-arrays-1.svg)
+![Visual guide of an empty array with length 5](/media/graphic-cpp-arrays-1.png)
 
 The golden boxes in the figure represents the elements inside of the array. It's empty for now because we didn't set initial values for it.
 
@@ -46,7 +46,7 @@ Like variables, arrays can have initial values that can be set during declaratio
 
 `int arrayName[5] = [12, 5, 15, 78, 32]`
 
-![Array declared with initial values](/media/graphic-cpp-arrays-2.svg)
+![Array declared with initial values](/media/graphic-cpp-arrays-2.png)
 
 ## Reading and Writing Values to an Array
 
@@ -61,7 +61,7 @@ numbers[0] = 45 // Write the number 45 to the 0th index
 
 \* *You don't have to put the two lines in the snippet on top of each other in your code*
 
-![Write 45 to 0th index of array](/media/graphic-cpp-arrays-3.svg)
+![Write 45 to 0th index of array](/media/graphic-cpp-arrays-3.png)
 
 Example:
 
