@@ -63,4 +63,5 @@ Save your code by going to File > Save or `CTRL + S`. After saving you can now r
 
 ## Related:
 
+- [Python - Variables](/posts/py-variables)
 - [C++ - Hello World](/posts/cpp-hello-world)
