@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Oct 2020 06:57:08 GMT</lastBuildDate><item><title><![CDATA[Python Input]]></title><description><![CDATA[Reading user input is an important part of a program. To collect user input from the terminal in Python, we use the input() method. To store user input to a variable, use 'variable = input()']]></description><link>http://csnotehub.com/posts/py-input</link><guid isPermaLink="false">http://csnotehub.com/posts/py-input</guid><pubDate>Sun, 18 Oct 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Oct 2020 12:35:33 GMT</lastBuildDate><item><title><![CDATA[Reading and Writing Files]]></title><description><![CDATA[The fstream class in c++ enables us to input and output to a file stored on the disk. Similar to how iostream is used in console input/output, fstream can do the same but to files.]]></description><link>http://csnotehub.com/posts/cpp-reading-and-writing-files</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-reading-and-writing-files</guid><pubDate>Mon, 26 Oct 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#open-parameter-flags&quot;&gt;open() Parameter Flags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#error-handling&quot;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The fstream class in c++ enables us to input and output to a file stored on the disk. Similar to how iostream is used in console input/output, fstream can do the same but to files.&lt;/p&gt;
+&lt;h2 id=&quot;syntax&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#syntax&quot; aria-label=&quot;syntax permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Syntax&lt;/h2&gt;
+&lt;p&gt;To use &lt;code class=&quot;language-text&quot;&gt;fstream&lt;/code&gt; we need to include it in our header includes.&lt;/p&gt;
+&lt;p&gt;If you read our &lt;a href=&quot;/posts/cpp-input-output&quot;&gt;C++ Input and Output Tutorial&lt;/a&gt;, then you might be already familiar with &lt;code class=&quot;language-text&quot;&gt;iostream&lt;/code&gt;. In this tutorial we will use both &lt;code class=&quot;language-text&quot;&gt;iostream&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;fstream&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For writing to a file:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;fstream&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ofstream fileName&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;filename.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  fileName &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello file!\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For reading from a file:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;fstream&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;string&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// This header is necessary for getline()&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ifstream fileName&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;filename.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  string fileContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;getline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fileName&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fileContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;The file contained: &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; fileContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you are both reading and writing:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;fstream&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;string&gt;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// This header is necessary for getline()&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  fstream fileName&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;filename.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  fileName &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Some text\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  string fileContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;getline&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fileName&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fileContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;The file contained: &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; fileContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fstream&lt;/code&gt; - the fstream header (filestream) is necessary for doing operations with files&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fstream fileName&lt;/code&gt; - declare fileName as a new file stream
+&lt;em&gt;fileName can be any valid variable name, for better readability try to match it with the filename of your file&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fileName.open(string)&lt;/code&gt; - opens your file from the disk, if writing, the file will automatically be created&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fileName &amp;lt;&amp;lt; &amp;quot;Hello world!&amp;quot;&lt;/code&gt; - follows the same syntax as console input/output&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;string fileContents&lt;/code&gt; - declares an empty variable to be used later&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;getline(fileName, fileContents)&lt;/code&gt; - reads the current line from the object &lt;code class=&quot;language-text&quot;&gt;fileName&lt;/code&gt; and stores it to the variable &lt;code class=&quot;language-text&quot;&gt;fileContents&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;cout &amp;lt;&amp;lt; fileContents&lt;/code&gt; - outputs the data inside the variable &lt;code class=&quot;language-text&quot;&gt;fileContents&lt;/code&gt; to the console&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fileName.close()&lt;/code&gt; - closing files after using them is a good practice as it frees up memory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;open-parameter-flags&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#open-parameter-flags&quot; aria-label=&quot;open parameter flags permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;open() Parameter Flags&lt;/h2&gt;
+&lt;p&gt;The method &lt;code class=&quot;language-text&quot;&gt;fstream.open()&lt;/code&gt; can take 2 parameters:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;fstream fileName
+fileName&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;filename.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ios&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;in &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ios&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;out &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The second parameter of the method can take the following:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;right&quot;&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::in&lt;/td&gt;
+&lt;td&gt;Opens for input operations. Not necessary when using ifstream&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::out&lt;/td&gt;
+&lt;td&gt;Opens for output operations. Not necessary when using ofstream&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::binary&lt;/td&gt;
+&lt;td&gt;Open in binary mode. For non-text files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::ate&lt;/td&gt;
+&lt;td&gt;Set initial position at end of file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::app&lt;/td&gt;
+&lt;td&gt;Append to file. All outputs automatically appended to the end of file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;ios::trunc&lt;/td&gt;
+&lt;td&gt;Remove existing contents when opened&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can mix and match these parameters to your liking&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;fstream testFile
+testFile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;testfile.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ios&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;app &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ios&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;By default, &lt;code class=&quot;language-text&quot;&gt;fstream&lt;/code&gt; enables us to do both input and output. But in our case, we specified only &lt;code class=&quot;language-text&quot;&gt;ios::out&lt;/code&gt; so we can only write to the file.&lt;/p&gt;
+&lt;p&gt;When we write to testfile.txt, all new data will automatically added at the end of the file.&lt;/p&gt;
+&lt;h2 id=&quot;error-handling&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#error-handling&quot; aria-label=&quot;error handling permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Error Handling&lt;/h2&gt;
+&lt;p&gt;In the event that the file fails to open, we should handle it accordingly&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  fstream myFile&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  myFile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;myfile.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myFile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;is_open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// do stuff&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Unable to open file&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;is_open()&lt;/code&gt; is a function that returns a boolean. &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; if the file is open, &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt; if the file is not open.&lt;/p&gt;
+&lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-input-output&quot;&gt;Input and Output&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-if-statements-advanced&quot;&gt;If Statements Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Python Input]]></title><description><![CDATA[Reading user input is an important part of a program. To collect user input from the terminal in Python, we use the input() method. To store user input to a variable, use 'variable = input()']]></description><link>http://csnotehub.com/posts/py-input</link><guid isPermaLink="false">http://csnotehub.com/posts/py-input</guid><pubDate>Sun, 18 Oct 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#application&quot;&gt;Application&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
