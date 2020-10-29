@@ -44,7 +44,7 @@ The black boxes from 0 - 4 are the indexes of the array. Array indexes always st
 
 Like variables, arrays can have initial values that can be set during declaration.
 
-`int arrayName[5] = [12, 5, 15, 78, 32]`
+`int arrayName[5] = {12, 5, 15, 78, 32}`
 
 ![Array declared with initial values](/media/graphic-cpp-arrays-2.png)
 
@@ -93,7 +93,7 @@ Example:
 using namespace std;
 
 int main() {
-  int numbers[4] = [45, 2, 5, 35];
+  int numbers[4] = {45, 2, 5, 35};
 
   cout << numbers[0] << endl; // Prints 45
   cout << numbers[3] << endl; // Prints 35
