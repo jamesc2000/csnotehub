@@ -108,5 +108,5 @@ The number is 7
 
 ## Related:
 
-- [Python - Installation Hello World](/posts/py-hello-world)
+- [Python - Installation Hello World](/posts/py-installation)
 - [C++ - Hello World](/posts/cpp-hello-world)

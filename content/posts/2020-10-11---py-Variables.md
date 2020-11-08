@@ -76,5 +76,5 @@ The second print statement will output `foo`
 
 ## Related:
 
-- [Python - Installation Hello World](/posts/py-hello-world)
+- [Python - Installation Hello World](/posts/py-installation)
 - [C++ - Hello World](/posts/cpp-hello-world)
