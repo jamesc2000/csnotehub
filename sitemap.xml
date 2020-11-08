@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>http://csnotehub.com/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/posts/cpp-hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/cpp-variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/cpp-if-statements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -11,15 +12,15 @@
 <url> <loc>http://csnotehub.com/posts/cpp-for-loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/cpp-do-while-loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/cpp-reading-and-writing-files</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://csnotehub.com/pages/terms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/posts/cpp-functions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/posts/cpp-switch-statements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/py-installation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/py-variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/py-if-statements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/py-input</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/posts/py-for-loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/pages/terms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/posts/cpp-arrays</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://csnotehub.com/posts/cpp-functions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://csnotehub.com/posts/cpp-hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://csnotehub.com/posts/cpp-switch-statements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/arrays</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/beginner</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/c</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -42,11 +43,13 @@
 <url> <loc>http://csnotehub.com/tag/loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/output</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/tag/python/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/switch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/tutorial</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/tutorial/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/tutorial/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/tutorial/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/tag/tutorial/page/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/while</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/tag/cin</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -54,8 +57,10 @@
 <url> <loc>http://csnotehub.com/category/c/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/category/c/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/category/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/category/python/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://csnotehub.com/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://csnotehub.com/page/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
