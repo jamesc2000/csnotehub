@@ -14,8 +14,7 @@ description: "Structs or structures in c++ are collections of related data items
 ---
 
 - [Syntax](#syntax)
-- [Making a Selection Menu](#making-a-selection-menu)
-  - [Removing the break statement](#removing-the-break-statement)
+- [Usage](#usage)
 - [Related](#related)
 
 Structs or structures in c++ are collections of related data items, possibly of different types (heterogenous). The elements inside a struct are called members.
