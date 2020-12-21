@@ -89,7 +89,7 @@
   Link: </component---src-templates-categories-list-template-js-e28883024731ccabe6b3.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/categories/page-data.json>; rel=preload; as=fetch; crossorigin
-/pages/terms/
+/pages/about/
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -99,7 +99,55 @@
   Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
   Link: </component---src-templates-page-template-js-b085a894339e6b90575c.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/pages/terms/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-variables
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-variables/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-if-statements
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-if-statements/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-input-output
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-input-output/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-if-statements-advanced
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-if-statements-advanced/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/cpp-while-loop
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -136,90 +184,6 @@
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/cpp-do-while-loop/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-if-statements-advanced
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-if-statements-advanced/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-if-statements
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-if-statements/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-functions
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-functions/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-arrays
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-arrays/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-input-output
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-input-output/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/py-variables
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/py-variables/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-hello-world
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-hello-world/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/cpp-reading-and-writing-files
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -232,7 +196,7 @@
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/cpp-reading-and-writing-files/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-switch-statements
+/posts/cpp-arrays
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -243,8 +207,8 @@
   Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-switch-statements/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/py-input
+  Link: </page-data/posts/cpp-arrays/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-functions
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -255,42 +219,7 @@
   Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/py-input/page-data.json>; rel=preload; as=fetch; crossorigin
-/pages/about/
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </component---src-templates-page-template-js-b085a894339e6b90575c.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/py-for-loop
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/py-for-loop/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/py-if-statements
-  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
-  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/py-if-statements/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-functions/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/py-installation
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -303,6 +232,54 @@
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/py-installation/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/py-variables
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/py-variables/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/py-if-statements
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/py-if-statements/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/py-input
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/py-input/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/py-for-loop
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/py-for-loop/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/cpp-structs
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -315,7 +292,7 @@
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/cpp-structs/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/cpp-variables
+/posts/cpp-stacks
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -326,7 +303,42 @@
   Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/cpp-variables/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-stacks/page-data.json>; rel=preload; as=fetch; crossorigin
+/pages/terms/
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </component---src-templates-page-template-js-b085a894339e6b90575c.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/pages/terms/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-hello-world
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-hello-world/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/cpp-switch-statements
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-73b93c5f1ba3f3b7bf07.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/cpp-switch-statements/page-data.json>; rel=preload; as=fetch; crossorigin
 /tag/arrays
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -627,6 +639,18 @@
   Link: </component---src-templates-tag-template-js-fb84d21e2ef60d63d47d.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/tag/python/page/1/page-data.json>; rel=preload; as=fetch; crossorigin
+/tag/stacks
+  Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-b004a5d2f37fbac8de1a.js>; rel=preload; as=script
+  Link: </app-a374c699b1de3399d880.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-7ce088639ca1af3a95bb.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-tag-template-js-fb84d21e2ef60d63d47d.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/tag/stacks/page-data.json>; rel=preload; as=fetch; crossorigin
 /tag/structs
   Link: </webpack-runtime-36e079618edc91e97d03.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
