@@ -82,7 +82,7 @@ This crude implementation of a stack is not advised because you cannot have mult
 
 ## Making/Declaring a Stack using the <stack> header
 
-A much more useful and practical way of dealing with stacks is using the built-in c++ `<stack>` header.
+A much more useful and practical way of dealing with stacks is using the built-in c++ `cpp›<stack>` header.
 
 ```cpp
 #include <iostream>
@@ -135,7 +135,7 @@ To use these methods follow the syntax
 stackName.empty()
 ```
 
-Replacing `stackName` and `empty()` with the name of your stack and the method of your choice.
+Replacing `cpp›stackName` and `cpp›empty()` with the name of your stack and the method of your choice.
 
 ## Related:
 
