@@ -74,7 +74,7 @@ class Car {
     string color;
     int price;
     string type;
-}
+};
 ```
 
 It's perfectly fine to put initial values on our attributes, it's one way to have a default value for all cars, but for our example we won't define default values.
@@ -141,7 +141,7 @@ class Car {
     void go() {
       cout << "The " << type << "is now moving\n";
     }
-}
+};
 
 int main() {
   Car car1;
@@ -207,7 +207,7 @@ class Student {
   private:
     string uniqueId;
     int i = 20;
-}
+};
 
 int main() {
   Student student1;
@@ -237,5 +237,5 @@ This is especially useful with very large and complex codebases and also when wo
 ## Related:
 
 - [Variables and Data Types](/posts/cpp-variables)
-- [Functions](posts/cpp-functions)
+- [Functions](/posts/cpp-functions)
 - [If Statements Advanced](/posts/cpp-if-statements-advanced)

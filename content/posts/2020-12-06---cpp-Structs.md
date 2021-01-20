@@ -73,5 +73,5 @@ The `.` is called the member selector. With the notation `objName.member` we can
 ## Related:
 
 - [Variables and Data Types](/posts/cpp-variables)
-- [Arrays](posts/cpp-arrays)
+- [Arrays](/posts/cpp-arrays)
 - [If Statements Advanced](/posts/cpp-if-statements-advanced)
