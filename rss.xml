@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 26 Dec 2020 13:27:42 GMT</lastBuildDate><item><title><![CDATA[Stacks]]></title><description><![CDATA[Stacks are homogenous data structures (they can only store elements of the same kind) like arrays, but they're different from normal arrays such that you can only add or remove items from the top of the stack. This nature is also called, Last in, First out (LIFO)]]></description><link>http://csnotehub.com/posts/cpp-stacks</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-stacks</guid><pubDate>Mon, 21 Dec 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Jan 2021 07:06:47 GMT</lastBuildDate><item><title><![CDATA[Constructors]]></title><description><![CDATA[Constructors are a special type of method in a class. A constructor is defined by declaring a function (a method) inside our class with the same name as the class]]></description><link>http://csnotehub.com/posts/cpp-constructors</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-constructors</guid><pubDate>Wed, 20 Jan 2021 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#constructors-as-a-way-of-instatiation&quot;&gt;Constructors as a Way of Instantiation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#constructors-get-called-whenever-a-new-instance-is-created&quot;&gt;Constructors get called whenever a new instance is created&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;constructors-as-a-way-of-instantiation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#constructors-as-a-way-of-instantiation&quot; aria-label=&quot;constructors as a way of instantiation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Constructors as a Way of Instantiation&lt;/h2&gt;
+&lt;p&gt;Constructors are a special type of method in a class. A constructor is defined by declaring a function (a method) inside our class with the same name as the class. You may find it easier and cleaner to instantiate objects from a class using a constructor rather than the &lt;a href=&quot;/posts/cpp-classes-and-objects#syntax&quot;&gt;default method&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    string name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; health&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    string uniqueId&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;string t_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; t_health&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// t_name and t_health can be the same as the actual attribute name&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// it&apos;s only done this way to emphasize that it doesn&apos;t have to be&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// the same name and health variable&lt;/span&gt;
+      name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; t_name
+      health &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; t_health&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// You don&apos;t have to have a parameter for every single attribute.&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// Note how we didn&apos;t include the string uniqueId&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// Call the constructor to instantiate a new enemy&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Zombie&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// This will create a zombie with 10 health&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Spider&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// This will create a spider with 5 health&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// The equivalent default method goes like this,   &lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// notice how much code you save if you use constructors&lt;/span&gt;
+  Enemy Zombie1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  Zombie1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Zombie&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  Zombie1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;health &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  Enemy Spider1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  Spider1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Spider&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  Spider1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;health &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;constructors-get-called-whenever-a-new-instance-is-created&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#constructors-get-called-whenever-a-new-instance-is-created&quot; aria-label=&quot;constructors get called whenever a new instance is created permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Constructors get called whenever a new instance is created&lt;/h2&gt;
+&lt;p&gt;Besides calling constructors to instantiate an object, the converse is also the same. The constructor also gets called whenever you instantiate an object.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Enemy&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    string name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; health&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;string t_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; t_health&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; t_name
+      health &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; t_health&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+      cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;New Enemy!\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Whenever we instantiate, this gets printed&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;Enemy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Zombie1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// This will create a zombie with 10 health&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// The equivalent default method goes like this,   &lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// notice how much code you save if you use constructors&lt;/span&gt;
+  Enemy Zombie2&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  Zombie2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Zombie2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;New Enemy!
+New Enemy!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;New Enemy!&lt;/code&gt; gets printed twice, because we instantiated the first zombie using the constructor, and the second using the &lt;a href=&quot;/posts/cpp-classes-and-objects#syntax&quot;&gt;default method&lt;/a&gt; of instantiation.&lt;/p&gt;
+&lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-classes-and-objects&quot;&gt;Classes and Objects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Stacks]]></title><description><![CDATA[Stacks are homogenous data structures (they can only store elements of the same kind) like arrays, but they're different from normal arrays such that you can only add or remove items from the top of the stack. This nature is also called, Last in, First out (LIFO)]]></description><link>http://csnotehub.com/posts/cpp-stacks</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-stacks</guid><pubDate>Mon, 21 Dec 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#makingdeclaring-a-stack-manually-with-arrays&quot;&gt;Making/Declaring a Stack manually with arrays&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#makingdeclaring-a-stack-using-the-stack-header&quot;&gt;Making/Declaring a Stack using the &lt;stack&gt; header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#usage&quot;&gt;Reading and Writing&lt;/a&gt;&lt;/li&gt;
@@ -125,7 +212,7 @@
 &lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;posts/cpp-arrays&quot;&gt;Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-arrays&quot;&gt;Arrays&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-structs&quot;&gt;Structs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Classes and Objects]]></title><description><![CDATA[Classes serve as templates to objects in your program. Classes and objects are the first concepts you need to understand for Object Oriented Programming (OOP). Variables inside classes are called attributes, while functions inside classes are called methods.]]></description><link>http://csnotehub.com/posts/cpp-classes-and-objects</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-classes-and-objects</guid><pubDate>Tue, 08 Dec 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
@@ -179,7 +266,7 @@
     string color&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; price&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     string type&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It’s perfectly fine to put initial values on our attributes, it’s one way to have a default value for all cars, but for our example we won’t define default values.&lt;/p&gt;
 &lt;p&gt;After defining our Car class, we can now instantiate any number of cars in our &lt;code class=&quot;language-cpp&quot;&gt;main&lt;/code&gt; and then we’ll put values for our attributes.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -236,7 +323,7 @@
     &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       cout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;The &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; type &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;is now moving\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   Car car1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -291,7 +378,7 @@ The truck has stopped&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
     string uniqueId&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   Student student1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -317,7 +404,7 @@ The truck has stopped&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-if-statements-advanced&quot;&gt;If Statements Advanced&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Structs]]></title><description><![CDATA[Structs or structures in c++ are collections of related data items, possibly of different types (heterogenous).]]></description><link>http://csnotehub.com/posts/cpp-structs</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-structs</guid><pubDate>Sun, 06 Dec 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
@@ -366,7 +453,7 @@ After declaring your own structure, we must instantiate at least one object that
 &lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;posts/cpp-arrays&quot;&gt;Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-arrays&quot;&gt;Arrays&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-if-statements-advanced&quot;&gt;If Statements Advanced&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Python For Loops]]></title><description><![CDATA[Reading user input is an important part of a program. To collect user input from the terminal in Python, we use the input() method. To store user input to a variable, use 'variable = input()']]></description><link>http://csnotehub.com/posts/py-for-loop</link><guid isPermaLink="false">http://csnotehub.com/posts/py-for-loop</guid><pubDate>Sun, 08 Nov 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Basic Syntax&lt;/a&gt;&lt;/li&gt;
@@ -1044,7 +1131,7 @@ Thank you for using my calculator!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-input-output&quot;&gt;Input and Output&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;posts/cpp-if-statements&quot;&gt;If Statements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-if-statements&quot;&gt;If Statements&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-if-statements-advanced&quot;&gt;If Statements Advanced&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Functions]]></title><description><![CDATA[A function is multiple statements or other functions that are grouped into one. When it is called, the statements and other functions inside are ran.]]></description><link>http://csnotehub.com/posts/cpp-functions</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-functions</guid><pubDate>Wed, 30 Sep 2020 04:50:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
