@@ -140,6 +140,6 @@ Replacing `stackName` and `empty()` with the name of your stack and the method o
 ## Related:
 
 - [Variables and Data Types](/posts/cpp-variables)
-- [Arrays](posts/cpp-arrays)
+- [Arrays](/posts/cpp-arrays)
 - [Functions](/posts/cpp-functions)
 - [Structs](/posts/cpp-structs)
