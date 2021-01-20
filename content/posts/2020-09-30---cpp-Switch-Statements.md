@@ -211,5 +211,5 @@ Removing the break statements makes the switch statement continue until all matc
 
 - [Input and Output](/posts/cpp-input-output)
 - [Variables and Data Types](/posts/cpp-variables)
-- [If Statements](posts/cpp-if-statements)
+- [If Statements](/posts/cpp-if-statements)
 - [If Statements Advanced](/posts/cpp-if-statements-advanced)
