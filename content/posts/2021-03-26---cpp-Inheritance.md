@@ -67,26 +67,30 @@ The `Weapon` class is derived from the `Item` class. This results in the `Weapon
 
 *Notice how private attributes or methods do not get inherited*
 
-- **Weapon**
-  - public
-    - name
-    - price
-    - damage
-    - durability
-  - private
-    - *nothing*
+```plaintext
+Weapon
+  public
+    name
+    price
+    damage
+    durability
+  private
+    *nothing*
+```
 
 The `Consumable` class is also derived from the `Item` class, but take note of the `private` access specifier on the class declaration. This means that the public and protected classes from the base class will become a private attribute or method of the sub class. The `Consumable` class will now have the following attributes:
 
 *Notice how the `name` and `price` attributes from the base class, are inherited to the private parts of the `Consumable` class.*
 
-- **Consumable**
-  - public
-    - effect
-    - effect_multiplier
-  - private
-    - name
-    - price
+```plaintext
+Consumable
+  public
+    effect
+    effect_multiplier
+  private
+    name
+    price
+```
 
 ## Related:
 

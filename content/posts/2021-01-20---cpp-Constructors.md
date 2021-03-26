@@ -117,3 +117,4 @@ New Enemy!
 - [Variables and Data Types](/posts/cpp-variables)
 - [Functions](/posts/cpp-functions)
 - [Classes and Objects](/posts/cpp-classes-and-objects)
+- [Inheritance](/posts/cpp-inheritance)
