@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Jan 2021 07:06:47 GMT</lastBuildDate><item><title><![CDATA[Constructors]]></title><description><![CDATA[Constructors are a special type of method in a class. A constructor is defined by declaring a function (a method) inside our class with the same name as the class]]></description><link>http://csnotehub.com/posts/cpp-constructors</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-constructors</guid><pubDate>Wed, 20 Jan 2021 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[csnotehub]]></title><description><![CDATA[Tips for CS, IT, and CpE university students!]]></description><link>http://csnotehub.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Mar 2021 13:07:09 GMT</lastBuildDate><item><title><![CDATA[Inheritance]]></title><description><![CDATA[Inheritance is a way to base a class to a parent class. The inherited class inherits the attributes and methods of the parent class.]]></description><link>http://csnotehub.com/posts/cpp-inheritance</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-inheritance</guid><pubDate>Fri, 26 Mar 2021 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#types-of-inheritance&quot;&gt;Types of Inheritance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inheritance is a way to base a class to a parent class. The inherited class inherits the attributes and methods of the parent class. Another advantage of using classes is that you can inherit one class from a base class or sometimes known as a parent class. This is useful when you’re planning to make a second class that has the same features as another class but want to add more attributes and methods while keeping it distinct.&lt;/p&gt;
+&lt;h2 id=&quot;types-of-inheritance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#types-of-inheritance&quot; aria-label=&quot;types of inheritance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Types of Inheritance&lt;/h2&gt;
+&lt;p&gt;There are five types of inheritance, namely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single Inheritance - the parent has one child&lt;/li&gt;
+&lt;li&gt;Multiple Inheritance - multiple parents, one child&lt;/li&gt;
+&lt;li&gt;Hierarchical Inheritance - single parent, multiple children&lt;/li&gt;
+&lt;li&gt;Multilevel Inheritance - the parent has children, grandchildren, and so on and so forth&lt;/li&gt;
+&lt;li&gt;Hybrid Inheritance - a combination of multiple types of inheritance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;syntax&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#syntax&quot; aria-label=&quot;syntax permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Syntax&lt;/h2&gt;
+&lt;p&gt;To inherit a class from a base class simply use the syntax&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SubClass&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token base-clause&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;BaseClass&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cpp&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    string name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; price&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    string id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Weapon&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token base-clause&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Item&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; damage&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; durability&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Consumable&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token base-clause&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Item&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+    string effect&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; effect_multiplier&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;Weapon&lt;/code&gt; class is derived from the &lt;code class=&quot;language-text&quot;&gt;Item&lt;/code&gt; class. This results in the &lt;code class=&quot;language-text&quot;&gt;Weapon&lt;/code&gt; class having the following attributes:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Notice how private attributes or methods do not get inherited&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;plaintext&quot;&gt;&lt;pre class=&quot;language-plaintext&quot;&gt;&lt;code class=&quot;language-plaintext&quot;&gt;Weapon
+  public
+    name
+    price
+    damage
+    durability
+  private
+    *nothing*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;Consumable&lt;/code&gt; class is also derived from the &lt;code class=&quot;language-text&quot;&gt;Item&lt;/code&gt; class, but take note of the &lt;code class=&quot;language-text&quot;&gt;private&lt;/code&gt; access specifier on the class declaration. This means that the public and protected classes from the base class will become a private attribute or method of the sub class. The &lt;code class=&quot;language-text&quot;&gt;Consumable&lt;/code&gt; class will now have the following attributes:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Notice how the &lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;price&lt;/code&gt; attributes from the base class, are inherited to the private parts of the &lt;code class=&quot;language-text&quot;&gt;Consumable&lt;/code&gt; class.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;plaintext&quot;&gt;&lt;pre class=&quot;language-plaintext&quot;&gt;&lt;code class=&quot;language-plaintext&quot;&gt;Consumable
+  public
+    effect
+    effect_multiplier
+  private
+    name
+    price&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;related&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#related&quot; aria-label=&quot;related permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Related:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-constructors&quot;&gt;Constructors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-classes-and-objects&quot;&gt;Classes and Objects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Constructors]]></title><description><![CDATA[Constructors are a special type of method in a class. A constructor is defined by declaring a function (a method) inside our class with the same name as the class]]></description><link>http://csnotehub.com/posts/cpp-constructors</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-constructors</guid><pubDate>Wed, 20 Jan 2021 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#constructors-as-a-way-of-instatiation&quot;&gt;Constructors as a Way of Instantiation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#constructors-get-called-whenever-a-new-instance-is-created&quot;&gt;Constructors get called whenever a new instance is created&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#related&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;
@@ -85,6 +149,7 @@ New Enemy!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-variables&quot;&gt;Variables and Data Types&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/posts/cpp-classes-and-objects&quot;&gt;Classes and Objects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/posts/cpp-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Stacks]]></title><description><![CDATA[Stacks are homogenous data structures (they can only store elements of the same kind) like arrays, but they're different from normal arrays such that you can only add or remove items from the top of the stack. This nature is also called, Last in, First out (LIFO)]]></description><link>http://csnotehub.com/posts/cpp-stacks</link><guid isPermaLink="false">http://csnotehub.com/posts/cpp-stacks</guid><pubDate>Mon, 21 Dec 2020 08:25:03 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#makingdeclaring-a-stack-manually-with-arrays&quot;&gt;Making/Declaring a Stack manually with arrays&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#makingdeclaring-a-stack-using-the-stack-header&quot;&gt;Making/Declaring a Stack using the &lt;stack&gt; header&lt;/a&gt;&lt;/li&gt;
